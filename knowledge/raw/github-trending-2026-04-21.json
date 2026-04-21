@@ -1,0 +1,212 @@
+[
+  {
+    "title": "Introspective-Diffusion/I-DLM: The first diffusion LLM to match same-scale AR model quality",
+    "url": "https://github.com/Introspective-Diffusion/I-DLM",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 52,
+      "forks": 3,
+      "today_stars": 52,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "I-DLM 是第一个在 15 个基准测试中匹配相同规模自回归模型质量的扩散语言模型。它在保持同等质量的同时，比 SDAR 在相同挂钟时间内生成 3.8 倍更多的 token。该项目发布了 I-DLM-8B、I-DLM-32B 和 I-DLM-8B-LoRA 模型。",
+    "metadata": {
+      "language": "Python",
+      "author": "Introspective-Diffusion",
+      "published_at": "2026-04-12T21:39:28Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.95,
+    "tags": ["diffusion", "llm", "language-model", "python", "research"]
+  },
+  {
+    "title": "GLM-5: From Vibe Coding to Agentic Engineering",
+    "url": "https://github.com/zai-org/GLM-5",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 2876,
+      "forks": 293,
+      "today_stars": 2876,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "GLM-5 针对复杂系统工程和长视野智能体任务设计。相比 GLM-4.5，GLM-5 从 355B 参数扩展到 744B 参数，在推理、编码和智能体任务上实现了开源模型中的最佳性能，缩小了与前沿模型的差距。",
+    "metadata": {
+      "language": "Python",
+      "author": "zai-org",
+      "published_at": "2026-02-09T08:17:02Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.94,
+    "tags": ["glm", "llm", "agentic-ai", "coding", "large-model"]
+  },
+  {
+    "title": "thunderbolt: AI You Control - Choose your models, own your data",
+    "url": "https://github.com/thunderbird/thunderbolt",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 3171,
+      "forks": 191,
+      "today_stars": 591,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "Thunderbolt 是一个现代 AI 控制平台，让用户可以选择自己的模型并拥有自己的数据，消除供应商锁定。它提供了对 AI 模型的完全控制权，支持 TypeScript 开发。",
+    "metadata": {
+      "language": "TypeScript",
+      "author": "thunderbird",
+      "published_at": "2025-01-01T00:00:00Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.92,
+    "tags": ["ai-control", "typescript", "vendor-lockin", "data-ownership", "platform"]
+  },
+  {
+    "title": "claude-context: Code search MCP for Claude Code",
+    "url": "https://github.com/zilliztech/claude-context",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 6248,
+      "forks": 545,
+      "today_stars": 74,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "Claude-context 是为 Claude Code 设计的代码搜索 MCP（模型上下文协议），使整个代码库成为任何编码智能体的上下文。它提供了高效的代码搜索和上下文管理功能。",
+    "metadata": {
+      "language": "TypeScript",
+      "author": "zilliztech",
+      "published_at": "2025-01-01T00:00:00Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.91,
+    "tags": ["claude", "code-search", "mcp", "typescript", "coding-agent"]
+  },
+  {
+    "title": "AI Agents for Beginners: 12 Lessons to Get Started Building AI Agents",
+    "url": "https://github.com/microsoft/ai-agents-for-beginners",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 57266,
+      "forks": 19831,
+      "today_stars": 131,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "微软推出的 AI 智能体入门教程，包含 12 节课帮助初学者开始构建 AI 智能体。课程涵盖了从基础概念到实际应用的完整学习路径，使用 Jupyter Notebook 格式。",
+    "metadata": {
+      "language": "Jupyter Notebook",
+      "author": "microsoft",
+      "published_at": "2024-01-01T00:00:00Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.90,
+    "tags": ["tutorial", "beginners", "ai-agents", "microsoft", "education"]
+  },
+  {
+    "title": "RAG-Anything: All-in-One RAG Framework",
+    "url": "https://github.com/HKUDS/RAG-Anything",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 16543,
+      "forks": 1987,
+      "today_stars": 245,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "RAG-Anything 是一个一体化 RAG 框架，提供了完整的检索增强生成解决方案。它支持多种数据源、向量数据库和 LLM 模型，使开发者能够快速构建和部署 RAG 应用。",
+    "metadata": {
+      "language": "Python",
+      "author": "HKUDS",
+      "published_at": "2024-01-01T00:00:00Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.93,
+    "tags": ["rag", "framework", "retrieval", "python", "all-in-one"]
+  },
+  {
+    "title": "TrendRadar: AI-driven public opinion & trend monitor",
+    "url": "https://github.com/sansan0/TrendRadar",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 53,
+      "forks": 10,
+      "today_stars": 53,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "TrendRadar 是一个 AI 驱动的舆情监控和趋势监测工具，支持多平台热点聚合、RSS 订阅和智能警报。它使用 AI 进行新闻筛选、翻译和分析，支持 MCP 架构集成。",
+    "metadata": {
+      "language": "Python",
+      "author": "sansan0",
+      "published_at": "2025-01-01T00:00:00Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.88,
+    "tags": ["trend-monitor", "public-opinion", "ai-analysis", "python", "mcp"]
+  },
+  {
+    "title": "autoresearch: AI agents running research on single-GPU nanochat training automatically",
+    "url": "https://github.com/karpathy/autoresearch",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 75185,
+      "forks": 10949,
+      "today_stars": 611,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "由 Karpathy 创建的 autoresearch 项目，让 AI 智能体在单 GPU 上自动进行 nanochat 训练研究。项目展示了 AI 智能体如何自主进行实验和优化，代表了自主 AI 研究的新方向。",
+    "metadata": {
+      "language": "Python",
+      "author": "karpathy",
+      "published_at": "2026-03-06T22:00:43Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.96,
+    "tags": ["autonomous-research", "ai-agents", "karpathy", "python", "nanochat"]
+  },
+  {
+    "title": "Eagle: Frontier Vision-Language Models with Data-Centric Strategies",
+    "url": "https://github.com/NVlabs/Eagle",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 938,
+      "forks": 50,
+      "today_stars": 938,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "Eagle 是 NVIDIA 实验室推出的前沿视觉语言模型系列，采用以数据为中心的策略。Eagle 2.5 在 10 个长视频基准测试中的 6 个上达到 SOTA，在 3/5 的视频任务上超越 GPT-4o。",
+    "metadata": {
+      "language": "Python",
+      "author": "NVlabs",
+      "published_at": "2024-06-27T07:22:52Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.92,
+    "tags": ["vision-language", "vlm", "nvidia", "python", "multimodal"]
+  },
+  {
+    "title": "OpenClaw: Your own personal AI assistant. Any OS. Any Platform.",
+    "url": "https://github.com/openclaw/openclaw",
+    "source": "github_trending",
+    "popularity": {
+      "stars": 361245,
+      "forks": 25000,
+      "today_stars": 5000,
+      "score": 0,
+      "comments": 0
+    },
+    "summary": "OpenClaw 是 2026 年的突破性开源项目，被称为 GitHub 历史上增长最快的开源项目之一。它是一个跨平台、跨操作系统的个人 AI 助手，采用龙虾方式（The lobster way）设计。",
+    "metadata": {
+      "language": "TypeScript",
+      "author": "openclaw",
+      "published_at": "2025-01-01T00:00:00Z",
+      "collected_at": "2026-04-21T11:30:00Z"
+    },
+    "relevance_score": 0.97,
+    "tags": ["ai-assistant", "openclaw", "typescript", "cross-platform", "personal-ai"]
+  }
+]
