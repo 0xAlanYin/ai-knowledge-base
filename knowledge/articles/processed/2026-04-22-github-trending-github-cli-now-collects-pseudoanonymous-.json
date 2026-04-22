@@ -1,0 +1,48 @@
+{
+  "id": "6a835890-2f52-4a59-ab36-bea86a7bccfe",
+  "title": "GitHub CLI now collects pseudoanonymous telemetry",
+  "source_url": "https://cli.github.com/telemetry",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 0,
+    "language": null,
+    "description": "<![CDATA[<a href=\"https://news.ycombinator.com/item?id=47862331\">Comments</a>]]>",
+    "author": "",
+    "topics": [],
+    "published_at": "Wed, 22 Apr 2026 11:58:58 +0000"
+  },
+  "content": {
+    "raw": "<![CDATA[<a href=\"https://news.ycombinator.com/item?id=47862331\">Comments</a>]]>",
+    "summary": "GitHub CLI 工具开始收集伪匿名遥测数据，这一变更引发了开发者社区的关注和讨论。遥测数据收集旨在改进产品体验，但涉及用户隐私和数据收集透明度问题。",
+    "key_points": [
+      "GitHub CLI 引入伪匿名遥测数据收集",
+      "变更引发开发者社区对隐私的讨论",
+      "数据收集旨在优化产品功能"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.8,
+    "novelty_score": 0.3,
+    "practicality_score": 0.7,
+    "tags": [
+      "GitHub",
+      "CLI",
+      "telemetry"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:02:39.846574+08:00",
+    "analyzed_at": "2026-04-22T21:02:39.846574+08:00"
+  },
+  "version": 1
+}

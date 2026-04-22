@@ -1,0 +1,82 @@
+{
+  "source": "pipeline",
+  "collected_at": "2026-04-22T21:01:51.943959+08:00",
+  "total_items": 6,
+  "items": [
+    {
+      "name": "MemPalace/mempalace",
+      "url": "https://github.com/MemPalace/mempalace",
+      "description": "The best-benchmarked open-source AI memory system. And it's free.",
+      "stars": 48932,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "chromadb",
+        "llm",
+        "mcp",
+        "memory",
+        "python"
+      ],
+      "author": "MemPalace",
+      "published_at": "2026-04-05T01:12:07Z",
+      "_source_type": "github"
+    },
+    {
+      "name": "run-llama/llama_index",
+      "url": "https://github.com/run-llama/llama_index",
+      "description": "LlamaIndex is the leading document agent and OCR platform",
+      "stars": 48803,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "application",
+        "data",
+        "fine-tuning",
+        "framework",
+        "llamaindex",
+        "llm",
+        "multi-agents",
+        "rag",
+        "vector-database"
+      ],
+      "author": "run-llama",
+      "published_at": "2022-11-02T04:24:54Z",
+      "_source_type": "github"
+    },
+    {
+      "name": "oobabooga/textgen",
+      "url": "https://github.com/oobabooga/textgen",
+      "description": "The original local LLM interface. Text, vision, tool-calling, training. UI + API, 100% offline and private.",
+      "stars": 46842,
+      "language": "Python",
+      "topics": [],
+      "author": "oobabooga",
+      "published_at": "2022-12-21T04:17:37Z",
+      "_source_type": "github"
+    },
+    {
+      "title": "Windows 9x Subsystem for Linux",
+      "url": "https://social.hails.org/@hailey/116446826733136456",
+      "description": "<![CDATA[<a href=\"https://news.ycombinator.com/item?id=47861270\">Comments</a>]]>",
+      "source": "https://news.ycombinator.com/rss",
+      "published_at": "Wed, 22 Apr 2026 09:52:52 +0000",
+      "_source_type": "rss"
+    },
+    {
+      "title": "3.4M Solar Panels",
+      "url": "https://tech.marksblogg.com/american-solar-farms-v2.html",
+      "description": "<![CDATA[<a href=\"https://news.ycombinator.com/item?id=47862386\">Comments</a>]]>",
+      "source": "https://news.ycombinator.com/rss",
+      "published_at": "Wed, 22 Apr 2026 12:04:30 +0000",
+      "_source_type": "rss"
+    },
+    {
+      "title": "GitHub CLI now collects pseudoanonymous telemetry",
+      "url": "https://cli.github.com/telemetry",
+      "description": "<![CDATA[<a href=\"https://news.ycombinator.com/item?id=47862331\">Comments</a>]]>",
+      "source": "https://news.ycombinator.com/rss",
+      "published_at": "Wed, 22 Apr 2026 11:58:58 +0000",
+      "_source_type": "rss"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "fca5bcd7-2abe-4998-8733-38854c4de255",
+  "title": "Windows 9x Subsystem for Linux",
+  "source_url": "https://social.hails.org/@hailey/116446826733136456",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 0,
+    "language": null,
+    "description": "<![CDATA[<a href=\"https://news.ycombinator.com/item?id=47861270\">Comments</a>]]>",
+    "author": "",
+    "topics": [],
+    "published_at": "Wed, 22 Apr 2026 09:52:52 +0000"
+  },
+  "content": {
+    "raw": "<![CDATA[<a href=\"https://news.ycombinator.com/item?id=47861270\">Comments</a>]]>",
+    "summary": "Windows 9x Subsystem for Linux 是一个开源项目，旨在在 Windows 95/98/ME 等旧版 Windows 9x 系统上运行 Linux 二进制文件。它通过创建一个兼容层来实现，允许用户在保留 Windows 9x 界面的同时，访问 Linux 命令行工具和应用程序。该项目展示了在历史遗留系统上实现现代软件兼容性的技术探索。",
+    "key_points": [
+      "在 Windows 9x 系统上运行 Linux 二进制文件",
+      "创建兼容层以实现跨平台执行",
+      "开源项目，支持旧版 Windows 系统"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.3,
+    "novelty_score": 0.7,
+    "practicality_score": 0.2,
+    "tags": [
+      "legacy-systems",
+      "compatibility-layer",
+      "open-source"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:02:39.846509+08:00",
+    "analyzed_at": "2026-04-22T21:02:39.846509+08:00"
+  },
+  "version": 1
+}

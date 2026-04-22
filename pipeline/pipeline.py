@@ -2,14 +2,14 @@
 
 使用方式::
 
-    # 完整流水线（GitHub + RSS，最多 20 条）
-    python pipeline/pipeline.py --sources github,rss --limit 20
+    # 完整流水线（GitHub + RSS，最多 20 条，使用 DeepSeek）
+    python pipeline/pipeline.py --sources github,rss --limit 20 --provider deepseek
 
-    # 只采集 GitHub（最多 5 条）
-    python pipeline/pipeline.py --sources github --limit 5
+    # 只采集 GitHub（最多 5 条，使用 Qwen）
+    python pipeline/pipeline.py --sources github --limit 5 --provider qwen
 
-    # 只采集 RSS（最多 10 条）
-    python pipeline/pipeline.py --sources rss --limit 10
+    # 只采集 RSS（最多 10 条，使用 OpenAI）
+    python pipeline/pipeline.py --sources rss --limit 10 --provider openai
 
     # 干跑模式（不写文件）
     python pipeline/pipeline.py --sources github --limit 5 --dry-run
@@ -33,7 +33,7 @@ from typing import Any
 
 import httpx
 
-from model_client import chat_with_retry
+from model_client import chat_with_retry, OpenAICompatibleProvider
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -264,12 +264,13 @@ def _build_analysis_prompt(item: dict[str, Any], source_type: str) -> str:
     )
 
 
-def analyze_item(item: dict[str, Any], source_type: str) -> dict[str, Any]:
+def analyze_item(item: dict[str, Any], source_type: str, provider: str = "deepseek") -> dict[str, Any]:
     """调用 LLM 对单条内容进行摘要/评分/标签分析。
 
     Args:
         item: 原始条目字典。
         source_type: 数据源类型（github / rss）。
+        provider: LLM 提供商（deepseek, qwen, openai）。
 
     Returns:
         分析结果字典，包含 summary、key_points、analysis 等字段。
@@ -277,11 +278,15 @@ def analyze_item(item: dict[str, Any], source_type: str) -> dict[str, Any]:
     prompt = _build_analysis_prompt(item, source_type)
 
     try:
+        # 创建指定的 provider 实例
+        llm_provider = OpenAICompatibleProvider(provider_name=provider)
+        
         resp = chat_with_retry(
             messages=[
                 {"role": "system", "content": _ANALYSIS_SYSTEM_PROMPT},
                 {"role": "user", "content": prompt},
             ],
+            provider=llm_provider,
             temperature=0.3,
             max_tokens=1024,
         )
@@ -528,6 +533,7 @@ def _safe_filename(title: str) -> str:
 def run_pipeline(
     sources: tuple[str, ...] = ("github", "rss"),
     limit: int = 10,
+    provider: str = "deepseek",
     dry_run: bool = False,
 ) -> int:
     """运行完整的四步知识库流水线。
@@ -535,6 +541,7 @@ def run_pipeline(
     Args:
         sources: 数据源列表（支持 "github"、"rss"）。
         limit: 每个数据源的最大采集条数。
+        provider: LLM 提供商（deepseek, qwen, openai）。
         dry_run: 是否干跑（不写文件）。
 
     Returns:
@@ -567,11 +574,11 @@ def run_pipeline(
     _save_raw_data(all_raw_items, dry_run=dry_run)
 
     # Step 2: Analyze
-    logger.info("=== Step 2: Analyze (%d items) ===", len(all_raw_items))
+    logger.info("=== Step 2: Analyze (%d items) with provider=%s ===", len(all_raw_items), provider)
     for i, item in enumerate(all_raw_items):
         source_type = item.pop("_source_type", "github")
         logger.debug("Analyzing [%d/%d]: %s", i + 1, len(all_raw_items), item.get("name", item.get("title", "?")))
-        analysis = analyze_item(item, source_type)
+        analysis = analyze_item(item, source_type, provider=provider)
         item["_analysis"] = analysis
 
     # Step 3: Organize
@@ -670,6 +677,12 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="每个数据源的最大采集条数，默认: 10",
     )
     parser.add_argument(
+        "--provider",
+        choices=["deepseek", "qwen", "openai"],
+        default="deepseek",
+        help="LLM 提供商（deepseek, qwen, openai），默认: deepseek",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="干跑模式：只打印不写文件",
@@ -696,9 +709,10 @@ def main(argv: list[str] | None = None) -> int:
 
     sources = tuple(s.strip() for s in args.sources.split(",") if s.strip())
     logger.info(
-        "Pipeline started — sources=%s limit=%d dry_run=%s",
+        "Pipeline started — sources=%s limit=%d provider=%s dry_run=%s",
         sources,
         args.limit,
+        args.provider,
         args.dry_run,
     )
 
@@ -706,6 +720,7 @@ def main(argv: list[str] | None = None) -> int:
         count = run_pipeline(
             sources=sources,
             limit=args.limit,
+            provider=args.provider,
             dry_run=args.dry_run,
         )
         logger.info("Pipeline finished. Total articles saved: %d", count)

@@ -1,0 +1,45 @@
+{
+  "id": "d1e666ba-d8f6-403e-b3f3-a3e50edb0372",
+  "title": "3.4M Solar Panels",
+  "source_url": "https://tech.marksblogg.com/american-solar-farms-v2.html",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 0,
+    "language": null,
+    "description": "<![CDATA[<a href=\"https://news.ycombinator.com/item?id=47862386\">Comments</a>]]>",
+    "author": "",
+    "topics": [],
+    "published_at": "Wed, 22 Apr 2026 12:04:30 +0000"
+  },
+  "content": {
+    "raw": "<![CDATA[<a href=\"https://news.ycombinator.com/item?id=47862386\">Comments</a>]]>",
+    "summary": "该内容仅包含一个标题'3.4M Solar Panels'和一个指向Hacker News评论的链接，缺乏具体的技术细节、背景或分析。",
+    "key_points": [
+      "标题提及340万块太阳能电池板",
+      "链接指向Hacker News相关讨论",
+      "原始内容未提供技术信息"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [],
+      "complexity": "beginner"
+    }
+  },
+  "analysis": {
+    "category": "tutorial",
+    "relevance_score": 0.2,
+    "novelty_score": 0.1,
+    "practicality_score": 0.1,
+    "tags": [
+      "solar-energy",
+      "news"
+    ],
+    "recommended_audience": []
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:02:39.846550+08:00",
+    "analyzed_at": "2026-04-22T21:02:39.846550+08:00"
+  },
+  "version": 1
+}

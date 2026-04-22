@@ -1,0 +1,58 @@
+{
+  "id": "3925bd80-36f2-417f-8999-27e24baeca73",
+  "title": "MemPalace/mempalace",
+  "source_url": "https://github.com/MemPalace/mempalace",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 48932,
+    "language": "Python",
+    "description": "The best-benchmarked open-source AI memory system. And it's free.",
+    "author": "MemPalace",
+    "topics": [
+      "ai",
+      "chromadb",
+      "llm",
+      "mcp",
+      "memory",
+      "python"
+    ],
+    "published_at": "2026-04-05T01:12:07Z"
+  },
+  "content": {
+    "raw": "The best-benchmarked open-source AI memory system. And it's free.",
+    "summary": "MemPalace是一个开源AI记忆系统，声称在基准测试中表现最佳，提供免费使用。该项目基于Python开发，专注于为大型语言模型提供记忆功能，与ChromaDB等工具集成，支持MCP协议。",
+    "key_points": [
+      "开源且免费的AI记忆系统",
+      "在基准测试中表现优异",
+      "与ChromaDB集成并支持MCP协议"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "library",
+    "relevance_score": 0.85,
+    "novelty_score": 0.7,
+    "practicality_score": 0.9,
+    "tags": [
+      "ai",
+      "memory",
+      "llm"
+    ],
+    "recommended_audience": [
+      "engineers",
+      "researchers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:02:39.846233+08:00",
+    "analyzed_at": "2026-04-22T21:02:39.846233+08:00"
+  },
+  "version": 1
+}
