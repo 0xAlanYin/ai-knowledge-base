@@ -1,0 +1,72 @@
+{
+  "id": "35e25cf7-6f08-44ab-81a8-3e3422374a99",
+  "title": "zhayujie/CowAgent",
+  "source_url": "https://github.com/zhayujie/CowAgent",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 43627,
+    "language": "Python",
+    "description": "CowAgent (chatgpt-on-wechat) 是基于大模型的超级AI助理，能主动思考和任务规划、访问操作系统和外部资源、创造和执行Skills、通过长期记忆和知识库不断成长，比OpenClaw更轻量和便捷。同时支持微信、飞书、钉钉、企微、QQ、公众号、网页等接入，可选择OpenAI/Claude/Gemini/DeepSeek/ Qwen/GLM/Kimi/LinkAI，能处理文本、语音、图片和文件，可快速搭建个人AI助理和企业数字员工。",
+    "author": "zhayujie",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "chatgpt-on-wechat",
+      "claude",
+      "deepseek",
+      "dingtalk",
+      "feishu-bot",
+      "gemini",
+      "kimi",
+      "linkai",
+      "llm",
+      "mcp",
+      "multi-agent",
+      "openai",
+      "openclaw",
+      "python3",
+      "qwen",
+      "skills",
+      "wechat",
+      "weixin"
+    ],
+    "published_at": "2022-08-07T08:33:41Z"
+  },
+  "content": {
+    "raw": "CowAgent (chatgpt-on-wechat) 是基于大模型的超级AI助理，能主动思考和任务规划、访问操作系统和外部资源、创造和执行Skills、通过长期记忆和知识库不断成长，比OpenClaw更轻量和便捷。同时支持微信、飞书、钉钉、企微、QQ、公众号、网页等接入，可选择OpenAI/Claude/Gemini/DeepSeek/ Qwen/GLM/Kimi/LinkAI，能处理文本、语音、图片和文件，可快速搭建个人AI助理和企业数字员工。",
+    "summary": "CowAgent是一个基于大模型的超级AI助理框架，支持主动思考、任务规划、访问操作系统和外部资源，并能通过长期记忆和知识库持续学习。它支持多种消息平台（如微信、飞书、钉钉）和多种大模型（如OpenAI、Claude、Gemini），可处理文本、语音、图片和文件，适用于快速搭建个人AI助理或企业数字员工。",
+    "key_points": [
+      "支持主动思考和任务规划的多智能体框架",
+      "可访问操作系统和外部资源，支持创建和执行自定义Skills",
+      "支持多种消息平台接入和多种大模型选择，具备长期记忆和知识库功能"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.9,
+    "novelty_score": 0.7,
+    "practicality_score": 0.9,
+    "tags": [
+      "ai-agent",
+      "multi-agent",
+      "chatbot-framework"
+    ],
+    "recommended_audience": [
+      "engineers",
+      "product-managers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:03:02.205782+08:00",
+    "analyzed_at": "2026-04-22T21:03:02.205782+08:00"
+  },
+  "version": 1
+}

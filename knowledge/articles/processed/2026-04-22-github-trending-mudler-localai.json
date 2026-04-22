@@ -1,0 +1,70 @@
+{
+  "id": "ec81b942-6b52-4296-8026-22b3476345c5",
+  "title": "mudler/LocalAI",
+  "source_url": "https://github.com/mudler/LocalAI",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 45696,
+    "language": "Go",
+    "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+    "author": "mudler",
+    "topics": [
+      "agents",
+      "ai",
+      "api",
+      "audio-generation",
+      "decentralized",
+      "distributed",
+      "image-generation",
+      "libp2p",
+      "llama",
+      "llm",
+      "mamba",
+      "mcp",
+      "musicgen",
+      "object-detection",
+      "rerank",
+      "stable-diffusion",
+      "text-generation",
+      "tts"
+    ],
+    "published_at": "2023-03-18T22:58:02Z"
+  },
+  "content": {
+    "raw": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+    "summary": "LocalAI是一个开源AI引擎，支持在任意硬件上运行多种AI模型（包括LLM、视觉、语音、图像、视频生成等），无需GPU即可部署。它提供了与OpenAI API兼容的接口，便于本地化部署和隐私保护。",
+    "key_points": [
+      "支持多种AI模型（LLM、视觉、语音等）",
+      "无需GPU，可在普通硬件上运行",
+      "提供与OpenAI兼容的API接口"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Go"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.9,
+    "novelty_score": 0.7,
+    "practicality_score": 0.9,
+    "tags": [
+      "local-ai",
+      "open-source",
+      "privacy"
+    ],
+    "recommended_audience": [
+      "engineers",
+      "product-managers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:03:02.205725+08:00",
+    "analyzed_at": "2026-04-22T21:03:02.205725+08:00"
+  },
+  "version": 1
+}

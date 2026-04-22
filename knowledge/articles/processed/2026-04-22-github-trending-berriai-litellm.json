@@ -1,0 +1,68 @@
+{
+  "id": "648ac535-8946-4b98-9d6e-9b745f4227d1",
+  "title": "BerriAI/litellm",
+  "source_url": "https://github.com/BerriAI/litellm",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 44268,
+    "language": "Python",
+    "description": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]",
+    "author": "BerriAI",
+    "topics": [
+      "ai-gateway",
+      "anthropic",
+      "azure-openai",
+      "bedrock",
+      "gateway",
+      "langchain",
+      "litellm",
+      "llm",
+      "llm-gateway",
+      "llmops",
+      "mcp-gateway",
+      "openai",
+      "openai-proxy",
+      "vertex-ai"
+    ],
+    "published_at": "2023-07-27T00:09:52Z"
+  },
+  "content": {
+    "raw": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]",
+    "summary": "LiteLLM是一个Python SDK和代理服务器（AI网关），提供统一接口调用100+个LLM API（包括OpenAI、Azure、Bedrock、VertexAI、Anthropic等），支持OpenAI格式或原生格式调用，具备成本跟踪、防护机制、负载均衡和日志记录功能。",
+    "key_points": [
+      "统一接口调用100+ LLM API",
+      "支持OpenAI格式兼容",
+      "提供成本跟踪和负载均衡",
+      "内置防护机制和日志记录",
+      "可作为代理服务器部署"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "library",
+    "relevance_score": 0.95,
+    "novelty_score": 0.85,
+    "practicality_score": 0.95,
+    "tags": [
+      "llm",
+      "api-gateway",
+      "llmops"
+    ],
+    "recommended_audience": [
+      "engineers",
+      "product-managers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:03:02.205738+08:00",
+    "analyzed_at": "2026-04-22T21:03:02.205738+08:00"
+  },
+  "version": 1
+}

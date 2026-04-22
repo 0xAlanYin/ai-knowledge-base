@@ -1,0 +1,70 @@
+{
+  "id": "8cde3a83-d5c4-40b9-ac94-20c88528645a",
+  "title": "milvus-io/milvus",
+  "source_url": "https://github.com/milvus-io/milvus",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 43917,
+    "language": "Go",
+    "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+    "author": "milvus-io",
+    "topics": [
+      "anns",
+      "cloud-native",
+      "diskann",
+      "distributed",
+      "embedding-database",
+      "embedding-similarity",
+      "embedding-store",
+      "faiss",
+      "golang",
+      "hnsw",
+      "image-search",
+      "llm",
+      "nearest-neighbor-search",
+      "rag",
+      "vector-database",
+      "vector-search",
+      "vector-similarity",
+      "vector-store"
+    ],
+    "published_at": "2019-09-16T06:43:43Z"
+  },
+  "content": {
+    "raw": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+    "summary": "Milvus是一个高性能、云原生的向量数据库，专为可扩展的向量近似最近邻（ANN）搜索而设计。它支持多种索引算法如HNSW和DiskANN，提供分布式架构和云原生特性，适用于大规模向量相似性搜索场景，如LLM应用、图像搜索和RAG系统。",
+    "key_points": [
+      "高性能向量相似性搜索",
+      "云原生和分布式架构",
+      "支持多种索引算法（HNSW、FAISS、DiskANN等）"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Go"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.9,
+    "novelty_score": 0.7,
+    "practicality_score": 0.9,
+    "tags": [
+      "vector-database",
+      "ann-search",
+      "cloud-native"
+    ],
+    "recommended_audience": [
+      "engineers",
+      "researchers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:03:02.205767+08:00",
+    "analyzed_at": "2026-04-22T21:03:02.205767+08:00"
+  },
+  "version": 1
+}

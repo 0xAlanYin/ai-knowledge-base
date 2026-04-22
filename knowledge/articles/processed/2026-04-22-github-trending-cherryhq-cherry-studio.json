@@ -1,0 +1,65 @@
+{
+  "id": "5c517945-81ec-461f-ac20-61dd599daf62",
+  "title": "CherryHQ/cherry-studio",
+  "source_url": "https://github.com/CherryHQ/cherry-studio",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 44052,
+    "language": "TypeScript",
+    "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+    "author": "CherryHQ",
+    "topics": [
+      "agency-agents",
+      "ai-agent",
+      "claude-code",
+      "codex",
+      "open-cli",
+      "openclaw",
+      "opencode",
+      "skills",
+      "superpowers",
+      "vibe-coding"
+    ],
+    "published_at": "2024-05-24T01:56:26Z"
+  },
+  "content": {
+    "raw": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+    "summary": "Cherry Studio是一个AI生产力工作室，提供智能聊天、自主代理和300多个助手功能。它统一访问前沿大语言模型，支持代码生成、调试和自动化任务，旨在提升开发者和团队的工作效率。",
+    "key_points": [
+      "提供智能聊天和300多个AI助手",
+      "支持自主代理执行复杂任务",
+      "统一访问多种前沿LLM模型",
+      "专注于代码生成和开发效率提升",
+      "开源TypeScript项目，社区活跃"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "TypeScript"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.85,
+    "novelty_score": 0.7,
+    "practicality_score": 0.9,
+    "tags": [
+      "ai-agents",
+      "productivity",
+      "llm-integration",
+      "code-generation"
+    ],
+    "recommended_audience": [
+      "engineers",
+      "product-managers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:03:02.205750+08:00",
+    "analyzed_at": "2026-04-22T21:03:02.205750+08:00"
+  },
+  "version": 1
+}

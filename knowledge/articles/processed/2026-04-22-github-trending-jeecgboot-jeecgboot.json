@@ -1,0 +1,76 @@
+{
+  "id": "6e707ba8-6e98-4161-965e-8092626d58a0",
+  "title": "jeecgboot/JeecgBoot",
+  "source_url": "https://github.com/jeecgboot/JeecgBoot",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 45921,
+    "language": "Java",
+    "description": "一款 AI 驱动的低代码平台，提供\"零代码\"与\"代码生成\"双模式——零代码模式一句话搭建系统，代码生成模式自动输出前后端代码与建表 SQL，生成即可运行。平台内置 AI 聊天助手、AI大模型、知识库、AI流程编排、MCP 与插件体系，兼容主流大模型，支持一句话生成流程图、设计表单、聊天式业务操作，解决 Java 项目 80% 重复工作，高效且不失灵活。",
+    "author": "jeecgboot",
+    "topics": [
+      "activiti",
+      "agent",
+      "ai",
+      "aiflow",
+      "antd",
+      "codegenerator",
+      "deepseek",
+      "flowable",
+      "langchain4j",
+      "llm",
+      "low-code",
+      "mcp",
+      "mybatis-plus",
+      "rag",
+      "skills",
+      "spring-ai",
+      "springboot",
+      "springboot3",
+      "springcloud",
+      "vue3"
+    ],
+    "published_at": "2018-11-26T10:40:00Z"
+  },
+  "content": {
+    "raw": "一款 AI 驱动的低代码平台，提供\"零代码\"与\"代码生成\"双模式——零代码模式一句话搭建系统，代码生成模式自动输出前后端代码与建表 SQL，生成即可运行。平台内置 AI 聊天助手、AI大模型、知识库、AI流程编排、MCP 与插件体系，兼容主流大模型，支持一句话生成流程图、设计表单、聊天式业务操作，解决 Java 项目 80% 重复工作，高效且不失灵活。",
+    "summary": "JeecgBoot是一款基于Java的AI驱动低代码开发平台，提供零代码和代码生成双模式开发能力。平台内置AI聊天助手、大模型集成、知识库、流程编排等功能，支持通过自然语言描述生成系统、表单、流程图等，旨在解决Java项目中80%的重复性开发工作，显著提升开发效率。",
+    "key_points": [
+      "AI驱动的低代码/零代码开发平台",
+      "支持自然语言生成系统、表单、流程图",
+      "内置AI聊天助手、大模型、知识库、流程编排",
+      "兼容主流大模型，提供MCP与插件体系",
+      "基于SpringBoot、Vue3等技术栈"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Java"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.9,
+    "novelty_score": 0.8,
+    "practicality_score": 0.95,
+    "tags": [
+      "low-code",
+      "ai",
+      "code-generation",
+      "java",
+      "springboot"
+    ],
+    "recommended_audience": [
+      "engineers",
+      "product-managers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:03:02.205707+08:00",
+    "analyzed_at": "2026-04-22T21:03:02.205707+08:00"
+  },
+  "version": 1
+}
