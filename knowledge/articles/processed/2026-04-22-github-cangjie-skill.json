@@ -1,0 +1,53 @@
+{
+  "id": "0a6e1f67-b67f-4285-bcb6-00db9b54a360",
+  "title": "kangarooking/cangjie-skill",
+  "source_url": "https://github.com/kangarooking/cangjie-skill",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 471,
+    "language": "Python",
+    "description": "将一本书蒸馏为一组可执行的 Agent Skills 的工具。通过知识蒸馏技术将书籍内容转化为 AI Agent 可直接调用的技能模块。",
+    "topics": [
+      "ai",
+      "knowledge-distillation",
+      "agent-workflows",
+      "prompt-engineering"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "将一本书蒸馏为一组可执行的 Agent Skills 的工具。通过知识蒸馏技术将书籍内容转化为 AI Agent 可直接调用的技能模块。",
+    "summary": "将一本书蒸馏为一组可执行的 Agent Skills 的工具。通过知识蒸馏技术将书籍内容转化为 AI Agent 可直接调用的技能模块。",
+    "key_points": [
+      "3 天获 471 stars，中文开发者社区关注度高",
+      "使用知识蒸馏技术将书籍转化为 AI Agent 可直接调用的技能模块"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.6,
+    "novelty_score": 0.7,
+    "practicality_score": 0.6,
+    "tags": [
+      "tool",
+      "prompt-engineering",
+      "agent"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

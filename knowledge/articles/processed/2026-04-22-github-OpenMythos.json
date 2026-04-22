@@ -1,0 +1,54 @@
+{
+  "id": "4644edce-a03f-486c-ac57-e21088a50f22",
+  "title": "kyegomez/OpenMythos",
+  "source_url": "https://github.com/kyegomez/OpenMythos",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 8008,
+    "language": "Python",
+    "description": "基于公开研究文献从第一性原理重建 Claude Mythos 架构的理论复现项目，使用 PyTorch 和 JAX 实现 looped-transformer 等核心组件。上线仅 4 天即获 8000+ stars。",
+    "topics": [
+      "ai",
+      "anthropic",
+      "claude",
+      "pytorch",
+      "transformer"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "基于公开研究文献从第一性原理重建 Claude Mythos 架构的理论复现项目，使用 PyTorch 和 JAX 实现 looped-transformer 等核心组件。上线仅 4 天即获 8000+ stars。",
+    "summary": "基于公开研究文献从第一性原理重建 Claude Mythos 架构的理论复现项目，使用 PyTorch 和 JAX 实现 looped-transformer 等核心组件。上线仅 4 天即获 8000+ stars。",
+    "key_points": [
+      "上线 4 天获 8000+ stars，创本周 AI 项目增速纪录",
+      "使用 PyTorch 和 JAX 双框架实现 looped-transformer 等核心组件"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.7,
+    "novelty_score": 0.8,
+    "practicality_score": 0.7,
+    "tags": [
+      "paper",
+      "llm",
+      "transformer"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

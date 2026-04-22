@@ -1,0 +1,52 @@
+{
+  "id": "dc5b5b47-cb02-491b-b2aa-4ddb337344af",
+  "title": "deeplethe/ForgeRAG",
+  "source_url": "https://github.com/deeplethe/ForgeRAG",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 187,
+    "language": "Python",
+    "description": "生产级 RAG（检索增强生成）框架，具有结构感知推理能力。针对复杂文档结构优化检索质量。",
+    "topics": [
+      "rag",
+      "llm",
+      "retrieval"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "生产级 RAG（检索增强生成）框架，具有结构感知推理能力。针对复杂文档结构优化检索质量。",
+    "summary": "生产级 RAG（检索增强生成）框架，具有结构感知推理能力。针对复杂文档结构优化检索质量。",
+    "key_points": [
+      "上线一周获 187 stars",
+      "针对复杂文档结构优化检索质量"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.4,
+    "novelty_score": 0.4,
+    "practicality_score": 0.4,
+    "tags": [
+      "framework",
+      "rag",
+      "llm"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

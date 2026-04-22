@@ -1,0 +1,53 @@
+{
+  "id": "26748002-d7fe-4f8c-9a16-e2262a14604b",
+  "title": "ZeroZ-lab/cc-design",
+  "source_url": "https://github.com/ZeroZ-lab/cc-design",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 583,
+    "language": "JavaScript",
+    "description": "面向 AI Agent 的高保真 HTML 设计和原型指导技能，帮助 AI 编程工具生成更精美的前端界面。",
+    "topics": [
+      "ai",
+      "design",
+      "claude-code",
+      "prototyping"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "面向 AI Agent 的高保真 HTML 设计和原型指导技能，帮助 AI 编程工具生成更精美的前端界面。",
+    "summary": "面向 AI Agent 的高保真 HTML 设计和原型指导技能，帮助 AI 编程工具生成更精美的前端界面。",
+    "key_points": [
+      "3 天获 583 stars、64 forks",
+      "与 huashu-design 定位相似但实现路径不同"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "JavaScript"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.5,
+    "novelty_score": 0.5,
+    "practicality_score": 0.5,
+    "tags": [
+      "tool",
+      "prompt-engineering",
+      "code-generation"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

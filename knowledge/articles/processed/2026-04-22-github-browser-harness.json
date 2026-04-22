@@ -1,0 +1,52 @@
+{
+  "id": "611fc627-eab3-4e81-90cc-cfea4f7fbd8e",
+  "title": "browser-use/browser-harness",
+  "source_url": "https://github.com/browser-use/browser-harness",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 4667,
+    "language": "Python",
+    "description": "自愈式浏览器操控框架，让 LLM 能自主完成任意浏览器任务。支持自动元素定位、错误恢复和多步骤操作编排，是 browser-use 生态的核心组件。上线一周获 4600+ stars。",
+    "topics": [
+      "llm",
+      "agent",
+      "browser-automation"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "自愈式浏览器操控框架，让 LLM 能自主完成任意浏览器任务。支持自动元素定位、错误恢复和多步骤操作编排，是 browser-use 生态的核心组件。上线一周获 4600+ stars。",
+    "summary": "自愈式浏览器操控框架，让 LLM 能自主完成任意浏览器任务。支持自动元素定位、错误恢复和多步骤操作编排，是 browser-use 生态的核心组件。上线一周获 4600+ stars。",
+    "key_points": [
+      "一周内获 4667 stars、406 forks，社区采用速度极快",
+      "支持自动元素定位和错误恢复机制，降低 LLM 浏览器操控的失败率"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.8,
+    "novelty_score": 0.9,
+    "practicality_score": 0.8,
+    "tags": [
+      "framework",
+      "agent",
+      "browser-automation"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

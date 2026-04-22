@@ -1,0 +1,51 @@
+{
+  "id": "326f881a-284c-4695-8205-6283cccb9287",
+  "title": "TheRealSeanDonahoe/agents-md",
+  "source_url": "https://github.com/TheRealSeanDonahoe/agents-md",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 427,
+    "language": "Markdown",
+    "description": "即插即用的 AGENTS.md 配置模板，让每个 AI 编程 Agent 表现得像资深工程师而非急躁实习生。消除谄媚行为、阻止随意重构。",
+    "topics": [
+      "ai",
+      "agent",
+      "claude-code",
+      "developer-tools"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "即插即用的 AGENTS.md 配置模板，让每个 AI 编程 Agent 表现得像资深工程师而非急躁实习生。消除谄媚行为、阻止随意重构。",
+    "summary": "即插即用的 AGENTS.md 配置模板，让每个 AI 编程 Agent 表现得像资深工程师而非急躁实习生。消除谄媚行为、阻止随意重构。",
+    "key_points": [
+      "3 天获 427 stars，直接对标 AGENTS.md 规范格式",
+      "消除 AI 编程 Agent 的谄媚行为和随意重构问题"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.7,
+    "novelty_score": 0.8,
+    "practicality_score": 0.7,
+    "tags": [
+      "tool",
+      "prompt-engineering",
+      "agent"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

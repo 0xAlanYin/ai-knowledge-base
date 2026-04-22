@@ -1,0 +1,52 @@
+{
+  "id": "cde4bd30-ebdb-4a11-8ebb-a012a354ab5a",
+  "title": "koffuxu/ai-influence-digest",
+  "source_url": "https://github.com/koffuxu/ai-influence-digest",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 295,
+    "language": "Python",
+    "description": "将 X/Twitter 时间线转化为 AI 驱动的每周摘要工具。无需 API、无需爬虫，仅通过浏览器扫描 65+ AI 领域 KOL。",
+    "topics": [
+      "ai",
+      "content-aggregation",
+      "newsletter"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "将 X/Twitter 时间线转化为 AI 驱动的每周摘要工具。无需 API、无需爬虫，仅通过浏览器扫描 65+ AI 领域 KOL。",
+    "summary": "将 X/Twitter 时间线转化为 AI 驱动的每周摘要工具。无需 API、无需爬虫，仅通过浏览器扫描 65+ AI 领域 KOL。",
+    "key_points": [
+      "扫描 65+ AI 领域 KOL，无需 API 和爬虫",
+      "自动过滤可操作内容并导出结构化周报"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.5,
+    "novelty_score": 0.5,
+    "practicality_score": 0.5,
+    "tags": [
+      "tool",
+      "data-processing",
+      "nlp"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

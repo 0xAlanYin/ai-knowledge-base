@@ -1,0 +1,52 @@
+{
+  "id": "6b51a451-7ab9-434a-a6ff-b61517ac6459",
+  "title": "browser-use/browser-harness-js",
+  "source_url": "https://github.com/browser-use/browser-harness-js",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 207,
+    "language": "TypeScript",
+    "description": "browser-harness 的 JavaScript/TypeScript 版本，将自愈式浏览器操控能力带到 Node.js 生态。",
+    "topics": [
+      "llm",
+      "agent",
+      "browser-automation"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "browser-harness 的 JavaScript/TypeScript 版本，将自愈式浏览器操控能力带到 Node.js 生态。",
+    "summary": "browser-harness 的 JavaScript/TypeScript 版本，将自愈式浏览器操控能力带到 Node.js 生态。",
+    "key_points": [
+      "4 天获 207 stars，与 Python 版功能对齐",
+      "将自愈式浏览器操控能力带到 Node.js 生态"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "TypeScript"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.4,
+    "novelty_score": 0.4,
+    "practicality_score": 0.4,
+    "tags": [
+      "framework",
+      "agent",
+      "browser-automation"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

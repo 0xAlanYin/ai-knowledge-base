@@ -1,0 +1,54 @@
+{
+  "id": "d9e906ee-4bb2-4d19-b27a-8d10754a810e",
+  "title": "Manavarya09/design-extract",
+  "source_url": "https://github.com/Manavarya09/design-extract",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 1303,
+    "language": "JavaScript",
+    "description": "一键提取任意网站的完整设计系统，输出 DTCG 设计令牌格式。支持 MCP 服务器集成、多平台代码生成、Figma 变量导出和 WCAG 无障碍审计。",
+    "topics": [
+      "ai",
+      "design-system",
+      "mcp-server",
+      "design-tokens",
+      "tailwind"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "一键提取任意网站的完整设计系统，输出 DTCG 设计令牌格式。支持 MCP 服务器集成、多平台代码生成、Figma 变量导出和 WCAG 无障碍审计。",
+    "summary": "一键提取任意网站的完整设计系统，输出 DTCG 设计令牌格式。支持 MCP 服务器集成、多平台代码生成、Figma 变量导出和 WCAG 无障碍审计。",
+    "key_points": [
+      "支持 8+ 平台代码生成：iOS SwiftUI、Android Compose、Flutter、Tailwind v4",
+      "集成 MCP 服务器，AI 编程工具可直接调用"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "JavaScript"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.7,
+    "novelty_score": 0.8,
+    "practicality_score": 0.7,
+    "tags": [
+      "tool",
+      "design",
+      "code-generation"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

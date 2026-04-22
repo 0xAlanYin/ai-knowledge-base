@@ -1,0 +1,53 @@
+{
+  "id": "1790e312-3b50-433f-89f6-6829d5f78401",
+  "title": "brexhq/CrabTrap",
+  "source_url": "https://github.com/brexhq/CrabTrap",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 214,
+    "language": "Go",
+    "description": "以 LLM 为评判的 HTTP 代理，用于在生产环境中保护 AI Agent 安全。实时检测和拦截 Agent 的危险行为。",
+    "topics": [
+      "llm",
+      "agent",
+      "security",
+      "proxy"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "以 LLM 为评判的 HTTP 代理，用于在生产环境中保护 AI Agent 安全。实时检测和拦截 Agent 的危险行为。",
+    "summary": "以 LLM 为评判的 HTTP 代理，用于在生产环境中保护 AI Agent 安全。实时检测和拦截 Agent 的危险行为。",
+    "key_points": [
+      "由 Brex（金融科技公司）开发，企业级背景",
+      "以 LLM-as-a-judge 方式实时拦截 Agent 危险行为"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Go"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.6,
+    "novelty_score": 0.7,
+    "practicality_score": 0.6,
+    "tags": [
+      "tool",
+      "agent",
+      "security"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

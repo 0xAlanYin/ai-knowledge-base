@@ -1,0 +1,52 @@
+{
+  "id": "4bb86a14-608a-4a0b-a7d1-2404224cd7b6",
+  "title": "codejunkie99/agentic-stack",
+  "source_url": "https://github.com/codejunkie99/agentic-stack",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 1350,
+    "language": "Python",
+    "description": "跨平台可移植 Agent 工作栈，通过 .agent/ 目录统一管理记忆、技能和协议，无缝切换 Claude Code、Cursor、Windsurf、OpenCode 等工具。",
+    "topics": [
+      "agent",
+      "ai",
+      "multi-platform"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "跨平台可移植 Agent 工作栈，通过 .agent/ 目录统一管理记忆、技能和协议，无缝切换 Claude Code、Cursor、Windsurf、OpenCode 等工具。",
+    "summary": "跨平台可移植 Agent 工作栈，通过 .agent/ 目录统一管理记忆、技能和协议，无缝切换 Claude Code、Cursor、Windsurf、OpenCode 等工具。",
+    "key_points": [
+      "兼容 Claude Code、Cursor、Windsurf、OpenCode 等 6+ 种 AI 编程工具",
+      "通过 .agent/ 目录标准化记忆、技能和协议格式"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.7,
+    "novelty_score": 0.8,
+    "practicality_score": 0.7,
+    "tags": [
+      "framework",
+      "agent",
+      "platform"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

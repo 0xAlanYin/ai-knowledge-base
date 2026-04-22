@@ -1,0 +1,52 @@
+{
+  "id": "216193f9-a32a-4ce0-890d-fd9c70c873a9",
+  "title": "WeaveMindAI/weft",
+  "source_url": "https://github.com/WeaveMindAI/weft",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 955,
+    "language": "Rust",
+    "description": "专为 AI 系统设计的编程语言，用 Rust 实现。目标是提供一种让 AI 更高效理解和生成代码的语法范式。",
+    "topics": [
+      "ai",
+      "programming-language",
+      "compiler"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "专为 AI 系统设计的编程语言，用 Rust 实现。目标是提供一种让 AI 更高效理解和生成代码的语法范式。",
+    "summary": "专为 AI 系统设计的编程语言，用 Rust 实现。目标是提供一种让 AI 更高效理解和生成代码的语法范式。",
+    "key_points": [
+      "955 stars、127 forks，上线一周即获关注",
+      "用 Rust 实现，目标是让 AI 更高效理解和生成代码"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Rust"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.6,
+    "novelty_score": 0.7,
+    "practicality_score": 0.6,
+    "tags": [
+      "tool",
+      "code-generation",
+      "llm"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

@@ -1,0 +1,196 @@
+{
+  "source": "github_trending",
+  "skill": "github-trending",
+  "collected_at": "2026-04-22T17:14:19+08:00",
+  "items": [
+    {
+      "name": "kyegomez/OpenMythos",
+      "url": "https://github.com/kyegomez/OpenMythos",
+      "summary": "基于公开研究文献从第一性原理重建 Claude Mythos 架构的理论复现项目，使用 PyTorch 和 JAX 实现 looped-transformer 等核心组件。上线仅 4 天即获 8000+ stars，引发 AI 社区对 Anthropic 内部架构的广泛讨论。",
+      "stars": 8008,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "anthropic",
+        "claude",
+        "pytorch",
+        "transformer"
+      ]
+    },
+    {
+      "name": "browser-use/browser-harness",
+      "url": "https://github.com/browser-use/browser-harness",
+      "summary": "自愈式浏览器操控框架，让 LLM 能自主完成任意浏览器任务。支持自动元素定位、错误恢复和多步骤操作编排，是 browser-use 生态的核心组件。上线一周获 4600+ stars。",
+      "stars": 4667,
+      "language": "Python",
+      "topics": [
+        "llm",
+        "agent",
+        "browser-automation"
+      ]
+    },
+    {
+      "name": "alchaincyf/huashu-design",
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "summary": "为 Claude Code 设计的 HTML 原生设计技能包，支持高保真原型、幻灯片、动画输出，包含 20 种设计哲学和 5 维评审体系，并可导出 MP4。Agent 无关设计，兼容多种 AI 编程工具。",
+      "stars": 3942,
+      "language": "HTML",
+      "topics": [
+        "ai",
+        "claude-code",
+        "design",
+        "prototyping"
+      ]
+    },
+    {
+      "name": "codejunkie99/agentic-stack",
+      "url": "https://github.com/codejunkie99/agentic-stack",
+      "summary": "跨平台可移植 Agent 工作栈，通过 .agent/ 目录统一管理记忆、技能和协议，无缝切换 Claude Code、Cursor、Windsurf、OpenCode 等工具而知识不丢失。解决了 AI 编程工具间的知识迁移痛点。",
+      "stars": 1350,
+      "language": "Python",
+      "topics": [
+        "agent",
+        "ai",
+        "multi-platform"
+      ]
+    },
+    {
+      "name": "Manavarya09/design-extract",
+      "url": "https://github.com/Manavarya09/design-extract",
+      "summary": "一键提取任意网站的完整设计系统，输出 DTCG 设计令牌格式。支持 MCP 服务器集成、多平台代码生成（iOS SwiftUI、Android Compose、Flutter、Tailwind v4）、Figma 变量导出和 WCAG 无障碍审计。",
+      "stars": 1303,
+      "language": "JavaScript",
+      "topics": [
+        "ai",
+        "design-system",
+        "mcp-server",
+        "design-tokens",
+        "tailwind"
+      ]
+    },
+    {
+      "name": "WeaveMindAI/weft",
+      "url": "https://github.com/WeaveMindAI/weft",
+      "summary": "专为 AI 系统设计的编程语言，用 Rust 实现。目标是提供一种让 AI 更高效理解和生成代码的语法范式，代表 AI-native 编程语言方向的新探索。",
+      "stars": 955,
+      "language": "Rust",
+      "topics": [
+        "ai",
+        "programming-language",
+        "compiler"
+      ]
+    },
+    {
+      "name": "ZeroZ-lab/cc-design",
+      "url": "https://github.com/ZeroZ-lab/cc-design",
+      "summary": "面向 AI Agent 的高保真 HTML 设计和原型指导技能，帮助 AI 编程工具生成更精美的前端界面。与 huashu-design 类似但实现思路不同，丰富了 AI 辅助设计生态。",
+      "stars": 583,
+      "language": "JavaScript",
+      "topics": [
+        "ai",
+        "design",
+        "claude-code",
+        "prototyping"
+      ]
+    },
+    {
+      "name": "kangarooking/cangjie-skill",
+      "url": "https://github.com/kangarooking/cangjie-skill",
+      "summary": "将一本书蒸馏为一组可执行的 Agent Skills 的工具。通过知识蒸馏技术将书籍内容转化为 AI Agent 可直接调用的技能模块，实现知识到能力的自动化转化。",
+      "stars": 471,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "knowledge-distillation",
+        "agent-workflows",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "name": "TheRealSeanDonahoe/agents-md",
+      "url": "https://github.com/TheRealSeanDonahoe/agents-md",
+      "summary": "即插即用的 AGENTS.md 配置模板，让每个 AI 编程 Agent 表现得像资深工程师而非急躁实习生。消除谄媚行为、阻止随意重构、控制输出质量，是 AI 编程的「行为准则」文件。",
+      "stars": 427,
+      "language": "Markdown",
+      "topics": [
+        "ai",
+        "agent",
+        "claude-code",
+        "developer-tools"
+      ]
+    },
+    {
+      "name": "cosmicstack-labs/mercury-agent",
+      "url": "https://github.com/cosmicstack-labs/mercury-agent",
+      "summary": "具有「灵魂」的 AI Agent 框架，提供权限硬化的工具管理、Token 预算控制和多通道访问（CLI/Telegram）。支持 7x24 小时运行，面向生产级 Agent 部署场景。",
+      "stars": 356,
+      "language": "TypeScript",
+      "topics": [
+        "ai-agent",
+        "llm",
+        "ai-assistant"
+      ]
+    },
+    {
+      "name": "koffuxu/ai-influence-digest",
+      "url": "https://github.com/koffuxu/ai-influence-digest",
+      "summary": "将 X/Twitter 时间线转化为 AI 驱动的每周摘要工具。无需 API、无需爬虫，仅通过浏览器扫描 65+ AI 领域 KOL，自动过滤可操作内容并导出结构化周报。",
+      "stars": 295,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "content-aggregation",
+        "newsletter"
+      ]
+    },
+    {
+      "name": "brexhq/CrabTrap",
+      "url": "https://github.com/brexhq/CrabTrap",
+      "summary": "以 LLM 为评判的 HTTP 代理，用于在生产环境中保护 AI Agent 安全。实时检测和拦截 Agent 的危险行为，是企业级 Agent 部署的安全防护层。",
+      "stars": 214,
+      "language": "Go",
+      "topics": [
+        "llm",
+        "agent",
+        "security",
+        "proxy"
+      ]
+    },
+    {
+      "name": "browser-use/browser-harness-js",
+      "url": "https://github.com/browser-use/browser-harness-js",
+      "summary": "browser-harness 的 JavaScript/TypeScript 版本，将自愈式浏览器操控能力带到 Node.js 生态。与 Python 版功能对齐，支持 LLM 驱动的浏览器自动化任务。",
+      "stars": 207,
+      "language": "TypeScript",
+      "topics": [
+        "llm",
+        "agent",
+        "browser-automation"
+      ]
+    },
+    {
+      "name": "deeplethe/ForgeRAG",
+      "url": "https://github.com/deeplethe/ForgeRAG",
+      "summary": "生产级 RAG（检索增强生成）框架，具有结构感知推理能力。针对复杂文档结构优化检索质量，提供开箱即用的企业级 RAG 解决方案。",
+      "stars": 187,
+      "language": "Python",
+      "topics": [
+        "rag",
+        "llm",
+        "retrieval"
+      ]
+    },
+    {
+      "name": "unclebob/swarm-forge",
+      "url": "https://github.com/unclebob/swarm-forge",
+      "summary": "由「整洁架构」作者 Uncle Bob 开发的 AI Agent 协作编排工具，用于协调多个 AI Agent 协同工作。简洁的设计理念下实现了 Agent 集群的高效管理。",
+      "stars": 261,
+      "language": "Shell",
+      "topics": [
+        "ai",
+        "agent",
+        "swarm"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "source": "tech_summary",
+  "skill": "tech-summary",
+  "analyzed_at": "2026-04-22T17:17:48+08:00",
+  "raw_file": "knowledge/raw/github/github-trending-2026-04-22.json",
+  "items": [
+    {
+      "name": "browser-use/browser-harness",
+      "url": "https://github.com/browser-use/browser-harness",
+      "summary": "自愈式浏览器操控框架，LLM 可自主完成浏览器任务。",
+      "highlights": [
+        "一周内获 4667 stars、406 forks，社区采用速度极快",
+        "支持自动元素定位和错误恢复机制，降低 LLM 浏览器操控的失败率"
+      ],
+      "score": 8,
+      "score_label": "directly_helpful",
+      "score_reason": "解决了 LLM 浏览器自动化的核心可靠性问题，自愈能力是关键差异点，生态扩展（JS 版）也加速了采用。",
+      "tags": [
+        "framework",
+        "agent",
+        "browser-automation"
+      ],
+      "original_stars": 4667,
+      "original_language": "Python"
+    },
+    {
+      "name": "kyegomez/OpenMythos",
+      "url": "https://github.com/kyegomez/OpenMythos",
+      "summary": "基于公开文献重建 Claude Mythos 架构的理论复现项目。",
+      "highlights": [
+        "上线 4 天获 8000+ stars，创本周 AI 项目增速纪录",
+        "使用 PyTorch 和 JAX 双框架实现 looped-transformer 等核心组件"
+      ],
+      "score": 7,
+      "score_label": "directly_helpful",
+      "score_reason": "虽是基于公开推测的理论复现，但技术实现扎实且引发了 AI 社区对架构透明度的广泛讨论，社会价值大于工程价值。",
+      "tags": [
+        "paper",
+        "llm",
+        "transformer"
+      ],
+      "original_stars": 8008,
+      "original_language": "Python"
+    },
+    {
+      "name": "alchaincyf/huashu-design",
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "summary": "为 Claude Code 提供 HTML 原生高保真设计能力。",
+      "highlights": [
+        "4 天获 3942 stars、608 forks，国内开发者社区反响热烈",
+        "包含 20 种设计哲学和 5 维评审体系，支持 MP4 导出"
+      ],
+      "score": 7,
+      "score_label": "directly_helpful",
+      "score_reason": "首次将完整的设计方法论系统性地注入 AI 编程工具，设计哲学体系是亮点，但与其他设计技能功能重叠度高。",
+      "tags": [
+        "tool",
+        "prompt-engineering",
+        "code-generation"
+      ],
+      "original_stars": 3942,
+      "original_language": "HTML"
+    },
+    {
+      "name": "codejunkie99/agentic-stack",
+      "url": "https://github.com/codejunkie99/agentic-stack",
+      "summary": "跨平台 Agent 工作栈，统一管理记忆和技能。",
+      "highlights": [
+        "兼容 Claude Code、Cursor、Windsurf、OpenCode 等 6+ 种 AI 编程工具",
+        "通过 .agent/ 目录标准化记忆、技能和协议格式"
+      ],
+      "score": 7,
+      "score_label": "directly_helpful",
+      "score_reason": "精准解决了 AI 编程工具碎片化带来的知识迁移痛点，标准化方案实用性强，但需要生态广泛采用才能发挥价值。",
+      "tags": [
+        "framework",
+        "agent",
+        "platform"
+      ],
+      "original_stars": 1350,
+      "original_language": "Python"
+    },
+    {
+      "name": "Manavarya09/design-extract",
+      "url": "https://github.com/Manavarya09/design-extract",
+      "summary": "一键提取网站设计系统，输出 DTCG 标准令牌。",
+      "highlights": [
+        "支持 8+ 平台代码生成：iOS SwiftUI、Android Compose、Flutter、Tailwind v4",
+        "集成 MCP 服务器，AI 编程工具可直接调用"
+      ],
+      "score": 7,
+      "score_label": "directly_helpful",
+      "score_reason": "DTCG 设计令牌标准化和多平台代码生成是强功能，MCP 集成让 AI 工具链调用顺畅，但设计提取质量依赖输入网站质量。",
+      "tags": [
+        "tool",
+        "design",
+        "code-generation"
+      ],
+      "original_stars": 1303,
+      "original_language": "JavaScript"
+    },
+    {
+      "name": "TheRealSeanDonahoe/agents-md",
+      "url": "https://github.com/TheRealSeanDonahoe/agents-md",
+      "summary": "即插即用的 AGENTS.md 模板规范 AI 编程行为。",
+      "highlights": [
+        "3 天获 427 stars，直接对标 AGENTS.md 规范格式",
+        "消除 AI 编程 Agent 的谄媚行为和随意重构问题"
+      ],
+      "score": 7,
+      "score_label": "directly_helpful",
+      "score_reason": "解决了 AI 编程中真实存在的输出质量控制问题，即插即用的设计降低了使用门槛，实用性极强。",
+      "tags": [
+        "tool",
+        "prompt-engineering",
+        "agent"
+      ],
+      "original_stars": 427,
+      "original_language": "Markdown"
+    },
+    {
+      "name": "WeaveMindAI/weft",
+      "url": "https://github.com/WeaveMindAI/weft",
+      "summary": "专为 AI 系统设计的 Rust 编程语言。",
+      "highlights": [
+        "955 stars、127 forks，上线一周即获关注",
+        "用 Rust 实现，目标是让 AI 更高效理解和生成代码"
+      ],
+      "score": 6,
+      "score_label": "worth_knowing",
+      "score_reason": "AI-native 编程语言方向有探索价值，但目前缺乏具体的 benchmark 对比和实际应用案例，概念验证阶段。",
+      "tags": [
+        "tool",
+        "code-generation",
+        "llm"
+      ],
+      "original_stars": 955,
+      "original_language": "Rust"
+    },
+    {
+      "name": "kangarooking/cangjie-skill",
+      "url": "https://github.com/kangarooking/cangjie-skill",
+      "summary": "将书籍内容蒸馏为可执行的 Agent Skills。",
+      "highlights": [
+        "3 天获 471 stars，中文开发者社区关注度高",
+        "使用知识蒸馏技术将书籍转化为 AI Agent 可直接调用的技能模块"
+      ],
+      "score": 6,
+      "score_label": "worth_knowing",
+      "score_reason": "知识蒸馏为 Agent Skills 的思路新颖，但技能质量和实际可用性需要更多验证。",
+      "tags": [
+        "tool",
+        "prompt-engineering",
+        "agent"
+      ],
+      "original_stars": 471,
+      "original_language": "Python"
+    },
+    {
+      "name": "cosmicstack-labs/mercury-agent",
+      "url": "https://github.com/cosmicstack-labs/mercury-agent",
+      "summary": "权限硬化的生产级 AI Agent 框架。",
+      "highlights": [
+        "2 天获 356 stars，增速可观",
+        "支持 CLI 和 Telegram 双通道 7x24 运行，内置 Token 预算控制"
+      ],
+      "score": 6,
+      "score_label": "worth_knowing",
+      "score_reason": "权限硬化和 Token 预算控制是生产级 Agent 的必要能力，但框架成熟度和生态支持有待验证。",
+      "tags": [
+        "framework",
+        "agent",
+        "deployment"
+      ],
+      "original_stars": 356,
+      "original_language": "TypeScript"
+    },
+    {
+      "name": "unclebob/swarm-forge",
+      "url": "https://github.com/unclebob/swarm-forge",
+      "summary": "整洁架构作者开发的 AI Agent 协作编排工具。",
+      "highlights": [
+        "由「整洁架构」作者 Robert C. Martin 开发，信誉背书强",
+        "4 天获 261 stars，专注于多 Agent 协调"
+      ],
+      "score": 6,
+      "score_label": "worth_knowing",
+      "score_reason": "Uncle Bob 的背书是重要加分项，但目前功能较为基础，与成熟的 Agent 编排框架差距较大。",
+      "tags": [
+        "framework",
+        "agent",
+        "platform"
+      ],
+      "original_stars": 261,
+      "original_language": "Shell"
+    },
+    {
+      "name": "brexhq/CrabTrap",
+      "url": "https://github.com/brexhq/CrabTrap",
+      "summary": "LLM 评判的 HTTP 代理，保护生产 Agent 安全。",
+      "highlights": [
+        "由 Brex（金融科技公司）开发，企业级背景",
+        "以 LLM-as-a-judge 方式实时拦截 Agent 危险行为"
+      ],
+      "score": 6,
+      "score_label": "worth_knowing",
+      "score_reason": "Agent 安全是企业部署的关键瓶颈，LLM-as-judge 方案思路正确，但误报率和性能开销需评估。",
+      "tags": [
+        "tool",
+        "agent",
+        "security"
+      ],
+      "original_stars": 214,
+      "original_language": "Go"
+    },
+    {
+      "name": "ZeroZ-lab/cc-design",
+      "url": "https://github.com/ZeroZ-lab/cc-design",
+      "summary": "面向 AI Agent 的高保真 HTML 设计指导技能。",
+      "highlights": [
+        "3 天获 583 stars、64 forks",
+        "与 huashu-design 定位相似但实现路径不同"
+      ],
+      "score": 5,
+      "score_label": "worth_knowing",
+      "score_reason": "功能与 huashu-design 高度重叠，差异化不够明显，需要观察后续发展。",
+      "tags": [
+        "tool",
+        "prompt-engineering",
+        "code-generation"
+      ],
+      "original_stars": 583,
+      "original_language": "JavaScript"
+    },
+    {
+      "name": "koffuxu/ai-influence-digest",
+      "url": "https://github.com/koffuxu/ai-influence-digest",
+      "summary": "AI 驱动的 X/Twitter 资讯摘要工具。",
+      "highlights": [
+        "扫描 65+ AI 领域 KOL，无需 API 和爬虫",
+        "自动过滤可操作内容并导出结构化周报"
+      ],
+      "score": 5,
+      "score_label": "worth_knowing",
+      "score_reason": "无需 API 的设计降低了使用门槛，但信息源的全面性和摘要质量依赖浏览器的采集效果。",
+      "tags": [
+        "tool",
+        "data-processing",
+        "nlp"
+      ],
+      "original_stars": 295,
+      "original_language": "Python"
+    },
+    {
+      "name": "browser-use/browser-harness-js",
+      "url": "https://github.com/browser-use/browser-harness-js",
+      "summary": "browser-harness 的 JavaScript/TypeScript 版本。",
+      "highlights": [
+        "4 天获 207 stars，与 Python 版功能对齐",
+        "将自愈式浏览器操控能力带到 Node.js 生态"
+      ],
+      "score": 4,
+      "score_label": "skip",
+      "score_reason": "是 Python 版的同质化移植，功能完全对齐无差异化价值，低分处理。",
+      "tags": [
+        "framework",
+        "agent",
+        "browser-automation"
+      ],
+      "original_stars": 207,
+      "original_language": "TypeScript"
+    },
+    {
+      "name": "deeplethe/ForgeRAG",
+      "url": "https://github.com/deeplethe/ForgeRAG",
+      "summary": "生产级 RAG 框架，具备结构感知推理能力。",
+      "highlights": [
+        "上线一周获 187 stars",
+        "针对复杂文档结构优化检索质量"
+      ],
+      "score": 4,
+      "score_label": "skip",
+      "score_reason": "RAG 赛道竞争白热化，该框架缺乏与主流方案（LlamaIndex、LangChain）的对比 benchmark，stars 也偏低。",
+      "tags": [
+        "framework",
+        "rag",
+        "llm"
+      ],
+      "original_stars": 187,
+      "original_language": "Python"
+    }
+  ],
+  "trends": {
+    "common_themes": [
+      "AI Agent 生态全面爆发：15 个项目中 9 个与 Agent 直接相关，涵盖框架、编排、安全、行为规范等全栈方向",
+      "AI 编程工具技能生态成型：huashu-design、cc-design、design-extract、agentic-stack 等多个项目围绕 Claude Code/Cursor 等工具构建 skill 生态",
+      "AI Agent 安全与治理成为新焦点：agents-md（行为规范）、CrabTrap（安全代理）等项目反映了社区对 Agent 生产级部署的安全关注"
+    ],
+    "new_concepts": [
+      "「Agent 行为规范」范式：agents-md 和 agent-style 等项目将 AI 编程的输出质量控制从提示词工程提升到标准化规范文件层面",
+      "跨平台 Agent 可移植性：agentic-stack 的 .agent/ 目录标准化方案代表 Agent 配置和记忆的可移植趋势"
+    ],
+    "overall_assessment": "本周 AI 项目呈现 Agent 生态全面繁荣态势，从框架到安全到行为规范的全栈方向均有优质项目涌现，Agent 生产化部署成为核心主题。"
+  },
+  "summary": {
+    "total_items": 15,
+    "high_score_count": 0,
+    "medium_score_count": 13,
+    "low_score_count": 2,
+    "top_tags": [
+      "agent",
+      "tool",
+      "framework",
+      "prompt-engineering",
+      "code-generation",
+      "llm"
+    ]
+  }
+}

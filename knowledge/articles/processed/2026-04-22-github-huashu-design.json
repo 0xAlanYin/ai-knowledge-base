@@ -1,0 +1,53 @@
+{
+  "id": "64f83edb-bc05-4a38-b30a-b9969bafb4a4",
+  "title": "alchaincyf/huashu-design",
+  "source_url": "https://github.com/alchaincyf/huashu-design",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 3942,
+    "language": "HTML",
+    "description": "为 Claude Code 设计的 HTML 原生设计技能包，支持高保真原型、幻灯片、动画输出，包含 20 种设计哲学和 5 维评审体系。",
+    "topics": [
+      "ai",
+      "claude-code",
+      "design",
+      "prototyping"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "为 Claude Code 设计的 HTML 原生设计技能包，支持高保真原型、幻灯片、动画输出，包含 20 种设计哲学和 5 维评审体系。",
+    "summary": "为 Claude Code 设计的 HTML 原生设计技能包，支持高保真原型、幻灯片、动画输出，包含 20 种设计哲学和 5 维评审体系。",
+    "key_points": [
+      "4 天获 3942 stars、608 forks，国内开发者社区反响热烈",
+      "包含 20 种设计哲学和 5 维评审体系，支持 MP4 导出"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "HTML"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.7,
+    "novelty_score": 0.8,
+    "practicality_score": 0.7,
+    "tags": [
+      "tool",
+      "prompt-engineering",
+      "code-generation"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

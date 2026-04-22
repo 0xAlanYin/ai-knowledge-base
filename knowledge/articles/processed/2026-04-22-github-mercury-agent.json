@@ -1,0 +1,52 @@
+{
+  "id": "9c498359-b7bf-47c4-8426-d4fd0afaff03",
+  "title": "cosmicstack-labs/mercury-agent",
+  "source_url": "https://github.com/cosmicstack-labs/mercury-agent",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 356,
+    "language": "TypeScript",
+    "description": "具有灵魂的 AI Agent 框架，提供权限硬化的工具管理、Token 预算控制和多通道访问（CLI/Telegram）。支持 7x24 小时运行。",
+    "topics": [
+      "ai-agent",
+      "llm",
+      "ai-assistant"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "具有灵魂的 AI Agent 框架，提供权限硬化的工具管理、Token 预算控制和多通道访问（CLI/Telegram）。支持 7x24 小时运行。",
+    "summary": "具有灵魂的 AI Agent 框架，提供权限硬化的工具管理、Token 预算控制和多通道访问（CLI/Telegram）。支持 7x24 小时运行。",
+    "key_points": [
+      "2 天获 356 stars，增速可观",
+      "支持 CLI 和 Telegram 双通道 7x24 运行，内置 Token 预算控制"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "TypeScript"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.6,
+    "novelty_score": 0.7,
+    "practicality_score": 0.6,
+    "tags": [
+      "framework",
+      "agent",
+      "deployment"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}

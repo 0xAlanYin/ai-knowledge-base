@@ -1,0 +1,52 @@
+{
+  "id": "a7f5c88d-e7c6-4cfa-8b36-edb1ed3277da",
+  "title": "unclebob/swarm-forge",
+  "source_url": "https://github.com/unclebob/swarm-forge",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 261,
+    "language": "Shell",
+    "description": "由「整洁架构」作者 Uncle Bob 开发的 AI Agent 协作编排工具，用于协调多个 AI Agent 协同工作。",
+    "topics": [
+      "ai",
+      "agent",
+      "swarm"
+    ],
+    "published_at": "2026-04-22"
+  },
+  "content": {
+    "raw": "由「整洁架构」作者 Uncle Bob 开发的 AI Agent 协作编排工具，用于协调多个 AI Agent 协同工作。",
+    "summary": "由「整洁架构」作者 Uncle Bob 开发的 AI Agent 协作编排工具，用于协调多个 AI Agent 协同工作。",
+    "key_points": [
+      "由「整洁架构」作者 Robert C. Martin 开发，信誉背书强",
+      "4 天获 261 stars，专注于多 Agent 协调"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Shell"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.6,
+    "novelty_score": 0.7,
+    "practicality_score": 0.6,
+    "tags": [
+      "framework",
+      "agent",
+      "platform"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T00:00:00+08:00",
+    "analyzed_at": "2026-04-22T17:17:48+08:00"
+  },
+  "version": 1
+}
