@@ -1,0 +1,8 @@
+# AI Knowledge Base 依赖
+httpx>=0.25.0
+
+# 可选：如果需要 OpenAI SDK
+# openai>=1.0.0
+
+# 可选：如果需要百度千帆
+# qianfan>=0.3.0

@@ -1,0 +1,244 @@
+# RSS 数据源配置
+# 用于 AI 知识库自动化采集流水线
+#
+# 字段说明：
+# - name: 数据源名称
+# - url: RSS 源 URL
+# - category: 分类（comprehensive_tech, ai_research, company_blog, chinese_community）
+# - enabled: 是否启用采集（true/false）
+# - description: 数据源描述（可选）
+# - filter_keywords: 过滤关键词列表（可选，用于筛选 AI 相关内容）
+# - max_items: 每次采集最大条目数（可选，默认 10）
+
+sources:
+  # ============================================
+  # 综合技术类
+  # ============================================
+  - name: "Hacker News Best (AI)"
+    url: "https://hnrss.org/best?q=AI|LLM|machine+learning|deep+learning|neural+network"
+    category: "comprehensive_tech"
+    enabled: true
+    description: "Hacker News 最佳 AI 相关文章（通过关键词过滤）"
+    filter_keywords:
+      - "AI"
+      - "LLM"
+      - "machine learning"
+      - "deep learning"
+      - "neural network"
+      - "transformer"
+      - "GPT"
+      - "agent"
+      - "RAG"
+    max_items: 15
+
+  - name: "Lobsters AI/ML"
+    url: "https://lobste.rs/t/ai.rss"
+    category: "comprehensive_tech"
+    enabled: true
+    description: "Lobsters 社区 AI/ML 标签文章"
+    max_items: 10
+
+  # ============================================
+  # AI 研究类
+  # ============================================
+  - name: "arXiv cs.AI"
+    url: "http://export.arxiv.org/rss/cs.AI"
+    category: "ai_research"
+    enabled: true
+    description: "arXiv 计算机科学 - 人工智能分类最新论文"
+    max_items: 20
+
+  - name: "arXiv cs.LG"
+    url: "http://export.arxiv.org/rss/cs.LG"
+    category: "ai_research"
+    enabled: false  # 量太大，默认禁用
+    description: "arXiv 计算机科学 - 机器学习分类最新论文"
+    max_items: 10
+
+  - name: "arXiv cs.CL"
+    url: "http://export.arxiv.org/rss/cs.CL"
+    category: "ai_research"
+    enabled: false  # 量太大，默认禁用
+    description: "arXiv 计算机科学 - 计算语言学分类最新论文"
+    max_items: 10
+
+  # ============================================
+  # 公司博客类
+  # ============================================
+  - name: "OpenAI Blog"
+    url: "https://openai.com/blog/rss/"
+    category: "company_blog"
+    enabled: true
+    description: "OpenAI 官方博客"
+    max_items: 10
+
+  - name: "Anthropic Research"
+    url: "https://www.anthropic.com/research/rss"
+    category: "company_blog"
+    enabled: true
+    description: "Anthropic 研究文章"
+    max_items: 10
+
+  - name: "Hugging Face Blog"
+    url: "https://huggingface.co/blog/rss"
+    category: "company_blog"
+    enabled: true
+    description: "Hugging Face 技术博客"
+    max_items: 10
+
+  - name: "Google AI Blog"
+    url: "https://blog.google/technology/ai/rss/"
+    category: "company_blog"
+    enabled: true
+    description: "Google 官方博客 AI 分类"
+    max_items: 10
+
+  - name: "Meta AI Research"
+    url: "https://ai.meta.com/blog/rss"
+    category: "company_blog"
+    enabled: true
+    description: "Meta AI 研究博客"
+    max_items: 10
+
+  - name: "Microsoft Research AI"
+    url: "https://www.microsoft.com/en-us/research/feed/tag/ai/"
+    category: "company_blog"
+    enabled: true
+    description: "Microsoft AI 研究文章"
+    max_items: 10
+
+  # ============================================
+  # 中文社区类（默认禁用，需确认 RSS 可用性）
+  # ============================================
+  - name: "机器之心"
+    url: "https://www.jiqizhixin.com/rss"
+    category: "chinese_community"
+    enabled: false  # 需要确认 RSS 可用性
+    description: "机器之心 - 专业的人工智能媒体平台"
+    filter_keywords:
+      - "AI"
+      - "人工智能"
+      - "机器学习"
+      - "深度学习"
+      - "大模型"
+      - "LLM"
+    max_items: 10
+
+  - name: "量子位"
+    url: "https://www.qbitai.com/feed"
+    category: "chinese_community"
+    enabled: false  # 需要确认 RSS 可用性
+    description: "量子位 - 专注人工智能的垂直媒体"
+    filter_keywords:
+      - "AI"
+      - "人工智能"
+      - "机器学习"
+      - "深度学习"
+      - "大模型"
+    max_items: 10
+
+  - name: "AI 科技评论"
+    url: "https://www.leiphone.com/feed"
+    category: "chinese_community"
+    enabled: false  # 需要确认 RSS 可用性
+    description: "AI 科技评论 - 雷峰网旗下 AI 媒体"
+    filter_keywords:
+      - "AI"
+      - "人工智能"
+      - "大模型"
+    max_items: 10
+
+  # ============================================
+  # 其他技术社区
+  # ============================================
+  - name: "Reddit r/MachineLearning"
+    url: "https://www.reddit.com/r/MachineLearning/hot.rss"
+    category: "comprehensive_tech"
+    enabled: true
+    description: "Reddit Machine Learning 社区（热门帖子）"
+    max_items: 15
+
+  - name: "Reddit r/artificial"
+    url: "https://www.reddit.com/r/artificial/.rss"
+    category: "comprehensive_tech"
+    enabled: true
+    description: "Reddit Artificial Intelligence 社区"
+    max_items: 10
+
+  - name: "Towards Data Science"
+    url: "https://towardsdatascience.com/feed"
+    category: "comprehensive_tech"
+    enabled: true
+    description: "Towards Data Science 技术文章"
+    max_items: 10
+
+  - name: "Reddit r/LocalLLaMA"
+    url: "https://www.reddit.com/r/LocalLLaMA/hot.rss"
+    category: "comprehensive_tech"
+    enabled: true
+    description: "Reddit LocalLLaMA 社区 - 本地运行大模型讨论"
+    filter_keywords:
+      - "LLM"
+      - "local"
+      - "open source"
+      - "model"
+      - "quantization"
+      - "fine-tuning"
+    max_items: 15
+
+  - name: "The Verge (AI)"
+    url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+    category: "comprehensive_tech"
+    enabled: true
+    description: "The Verge AI 新闻 - 科技媒体 AI 报道"
+    filter_keywords:
+      - "AI"
+      - "artificial intelligence"
+      - "machine learning"
+      - "LLM"
+      - "GPT"
+      - "deep learning"
+    max_items: 10
+
+# 全局配置
+config:
+  # 默认每次采集最大条目数
+  default_max_items: 10
+  
+  # 请求超时时间（秒）
+  timeout: 30
+  
+  # 重试次数
+  max_retries: 3
+  
+  # 重试间隔（秒）
+  retry_delay: 5
+  
+  # 用户代理
+  user_agent: "AI-Knowledge-Base-RSS-Collector/1.0 (+https://github.com/your-org/ai-knowledge-base)"
+  
+  # 启用缓存（减少重复请求）
+  enable_cache: true
+  cache_ttl: 3600  # 缓存有效期（秒）
+
+# 分类映射（用于统计和过滤）
+categories:
+  comprehensive_tech:
+    name: "综合技术"
+    description: "综合性技术社区和新闻源"
+    priority: 1
+    
+  ai_research:
+    name: "AI 研究"
+    description: "学术研究和论文"
+    priority: 2
+    
+  company_blog:
+    name: "公司博客"
+    description: "AI 公司官方博客和研究"
+    priority: 3
+    
+  chinese_community:
+    name: "中文社区"
+    description: "中文 AI 技术社区和媒体"
+    priority: 4
