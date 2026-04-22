@@ -1,0 +1,61 @@
+{
+  "id": "4d9f32c3-8cd4-4d91-8296-a99b1b346ebc",
+  "title": "JuliusBrussee/caveman",
+  "source_url": "https://github.com/JuliusBrussee/caveman",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 43037,
+    "language": "Python",
+    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+    "author": "JuliusBrussee",
+    "topics": [
+      "ai",
+      "anthropic",
+      "caveman",
+      "claude",
+      "claude-code",
+      "llm",
+      "meme",
+      "prompt-engineering",
+      "skill",
+      "tokens"
+    ],
+    "published_at": "2026-04-04T10:03:00Z"
+  },
+  "content": {
+    "raw": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+    "summary": "JuliusBrussee/caveman 是一个针对 Claude Code 的提示工程技能，通过模仿原始人（caveman）的简单语言风格，显著减少 LLM 交互中的令牌使用量。该项目声称能削减高达 65% 的令牌，核心思想是'用少量令牌完成工作'，将复杂的自然语言指令转化为极其简洁、类似电报或原始人的表达方式。",
+    "key_points": [
+      "通过模仿原始人/极简语言风格优化提示，减少 Claude Code 交互的令牌消耗",
+      "声称能削减高达 65% 的令牌使用量，提升交互效率并可能降低成本",
+      "属于提示工程（Prompt Engineering）的实践，聚焦于 LLM 输入输出的压缩与优化"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "beginner"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.7,
+    "novelty_score": 0.6,
+    "practicality_score": 0.8,
+    "tags": [
+      "prompt-engineering",
+      "token-optimization",
+      "claude"
+    ],
+    "recommended_audience": [
+      "engineers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:03:02.205795+08:00",
+    "analyzed_at": "2026-04-22T21:03:02.205795+08:00"
+  },
+  "version": 1
+}

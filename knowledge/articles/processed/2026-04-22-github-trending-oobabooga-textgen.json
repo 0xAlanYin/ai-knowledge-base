@@ -1,0 +1,52 @@
+{
+  "id": "2898a73e-774c-42b3-ac3e-434df55bd974",
+  "title": "oobabooga/textgen",
+  "source_url": "https://github.com/oobabooga/textgen",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 46842,
+    "language": "Python",
+    "description": "The original local LLM interface. Text, vision, tool-calling, training. UI + API, 100% offline and private.",
+    "author": "oobabooga",
+    "topics": [],
+    "published_at": "2022-12-21T04:17:37Z"
+  },
+  "content": {
+    "raw": "The original local LLM interface. Text, vision, tool-calling, training. UI + API, 100% offline and private.",
+    "summary": "oobabooga/textgen是一个开源的本地大语言模型接口，提供文本生成、视觉处理、工具调用和模型训练功能。它包含用户界面和API，支持完全离线运行，注重隐私保护。该项目基于Python开发，在GitHub上获得了超过46000颗星。",
+    "key_points": [
+      "支持本地离线运行，保护用户隐私",
+      "提供UI界面和API两种使用方式",
+      "集成文本生成、视觉、工具调用和训练等多种功能"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "tool",
+    "relevance_score": 0.85,
+    "novelty_score": 0.7,
+    "practicality_score": 0.9,
+    "tags": [
+      "llm",
+      "local-ai",
+      "privacy",
+      "open-source"
+    ],
+    "recommended_audience": [
+      "engineers",
+      "researchers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:03:02.205693+08:00",
+    "analyzed_at": "2026-04-22T21:03:02.205693+08:00"
+  },
+  "version": 1
+}

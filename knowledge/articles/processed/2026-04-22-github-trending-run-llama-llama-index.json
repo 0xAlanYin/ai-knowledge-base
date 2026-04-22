@@ -1,0 +1,64 @@
+{
+  "id": "a825bd32-0fda-4cea-aa2c-983f7917c529",
+  "title": "run-llama/llama_index",
+  "source_url": "https://github.com/run-llama/llama_index",
+  "source_type": "github_trending",
+  "source_metadata": {
+    "stars": 48803,
+    "language": "Python",
+    "description": "LlamaIndex is the leading document agent and OCR platform",
+    "author": "run-llama",
+    "topics": [
+      "agents",
+      "application",
+      "data",
+      "fine-tuning",
+      "framework",
+      "llamaindex",
+      "llm",
+      "multi-agents",
+      "rag",
+      "vector-database"
+    ],
+    "published_at": "2022-11-02T04:24:54Z"
+  },
+  "content": {
+    "raw": "LlamaIndex is the leading document agent and OCR platform",
+    "summary": "LlamaIndex是一个领先的文档智能代理和OCR平台，专注于构建基于大型语言模型（LLM）的应用程序。它提供了一个框架，用于高效地索引、检索和与各种数据源（包括文档、数据库和API）进行交互，特别擅长于检索增强生成（RAG）和多代理系统开发。",
+    "key_points": [
+      "提供文档索引与检索框架，支持RAG应用",
+      "集成OCR功能，处理非结构化文档数据",
+      "支持多代理系统构建与协作",
+      "与向量数据库集成，优化语义搜索"
+    ],
+    "technical_details": {
+      "frameworks": [],
+      "languages": [
+        "Python"
+      ],
+      "complexity": "intermediate"
+    }
+  },
+  "analysis": {
+    "category": "framework",
+    "relevance_score": 0.95,
+    "novelty_score": 0.85,
+    "practicality_score": 0.9,
+    "tags": [
+      "RAG",
+      "LLM",
+      "Vector Database",
+      "Document Processing"
+    ],
+    "recommended_audience": [
+      "engineers",
+      "researchers"
+    ]
+  },
+  "status": "analyzed",
+  "timestamps": {
+    "collected_at": "2026-04-22T21:03:02.205677+08:00",
+    "analyzed_at": "2026-04-22T21:03:02.205677+08:00"
+  },
+  "version": 1
+}
