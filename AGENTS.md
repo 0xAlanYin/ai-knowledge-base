@@ -95,7 +95,7 @@ ai-knowledge-base/
   },
   "content": {
     "raw": "原始内容或摘要",
-    "summary": "AI 生成的摘要（200-300字）",
+    "summary": "AI 生成的摘要（至少20字，不超过 200 字）",
     "key_points": [
       "关键点1",
       "关键点2",
@@ -115,7 +115,7 @@ ai-knowledge-base/
     "tags": ["llm", "agent", "rag", "fine-tuning"],
     "recommended_audience": ["researchers", "engineers", "product-managers"]
   },
-  "status": "pending|processing|analyzed|distributed|archived",
+  "status": "draft|review|processing|analyzed|published|distributed|archived",
   "timestamps": {
     "collected_at": "2024-01-01T00:00:00Z",
     "analyzed_at": "2024-01-01T00:05:00Z",
