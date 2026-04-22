@@ -3,24 +3,24 @@ name: Daily Knowledge Collection
 on:
   schedule:
     # 每天 UTC 08:00 运行（北京时间 16:00）
-    - cron: '0 8 * * *'
+    - cron: "0 8 * * *"
   # 支持手动触发
   workflow_dispatch:
     inputs:
       sources:
-        description: '数据源（github,rss 或两者）'
+        description: "数据源（github,rss 或两者）"
         required: true
-        default: 'github,rss'
+        default: "github"
         type: string
       limit:
-        description: '每个源的最大采集数量'
+        description: "每个源的最大采集数量"
         required: false
-        default: '20'
+        default: "20"
         type: string
       verbose:
-        description: '启用详细日志'
+        description: "启用详细日志"
         required: false
-        default: 'false'
+        default: "false"
         type: boolean
 
 # 需要写入权限来提交更改
@@ -30,18 +30,18 @@ permissions:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 获取完整历史记录用于 git diff
+          fetch-depth: 0 # 获取完整历史记录用于 git diff
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-          cache: 'pip'  # 启用 pip 缓存
+          python-version: "3.11"
+          cache: "pip" # 启用 pip 缓存
 
       - name: Install dependencies
         run: |
@@ -75,11 +75,11 @@ jobs:
         run: |
           # 构建命令参数
           CMD_ARGS="--sources ${{ github.event.inputs.sources || 'github,rss' }} --limit ${{ github.event.inputs.limit || '20' }}"
-          
+
           if [ "${{ github.event.inputs.verbose || 'false' }}" = "true" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             CMD_ARGS="$CMD_ARGS --verbose"
           fi
-          
+
           echo "Running: python pipeline/pipeline.py $CMD_ARGS"
           python pipeline/pipeline.py $CMD_ARGS
 
@@ -101,7 +101,12 @@ jobs:
         run: |
           if [ -f "hooks/check_quality.py" ]; then
             echo "Running quality check..."
-            python hooks/check_quality.py
+            # 检查处理过的文章
+            if [ -d "knowledge/articles/processed" ]; then
+              python hooks/check_quality.py knowledge/articles/processed/*.json
+            else
+              echo "No processed articles directory found, skipping quality check"
+            fi
           else
             echo "check_quality.py not found, skipping quality check"
           fi
@@ -146,13 +151,13 @@ jobs:
         run: |
           # 添加所有更改
           git add .
-          
+
           # 获取当前日期
           CURRENT_DATE=$(date '+%Y-%m-%d')
-          
+
           # 构建提交消息
           COMMIT_MSG="📚 Add ${{ steps.check_changes.outputs.new_articles_count || '0' }} new articles - $CURRENT_DATE"
-          
+
           # 如果有具体文件变化，添加到提交消息
           CHANGES=$(git diff --cached --name-only | head -5)
           if [ -n "$CHANGES" ]; then
@@ -161,9 +166,9 @@ jobs:
               COMMIT_MSG="$COMMIT_MSG"$'\n'-" $file"
             done
           fi
-          
+
           echo "Committing with message: $COMMIT_MSG"
           git commit -m "$COMMIT_MSG"
-          
+
           # 推送到当前分支
           git push
