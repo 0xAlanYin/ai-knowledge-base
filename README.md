@@ -236,8 +236,3 @@ python mcp_knowledge_server.py
 - [OpenCode](https://opencode.ai/) - Agent 开发与编排平台
 - [LangGraph](https://langchain-ai.github.io/langgraph/) - Agent 工作流编排
 - [OpenClaw](https://github.com/opencode-ai/openclaw) - 网页抓取与数据提取
-
----
-
-*最后更新: 2024-04-22*
-*文档版本: 1.0.0*
