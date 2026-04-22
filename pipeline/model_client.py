@@ -3,11 +3,23 @@
 Provides abstract interface, retry logic, token estimation, and cost calculation.
 All model calls go through httpx directly (no openai SDK dependency).
 
+Features:
+- Unified interface for DeepSeek, Qwen, and OpenAI
+- Automatic cost tracking with CostTracker
+- Retry logic with exponential backoff
+- Token estimation and cost calculation
+- Support for both USD and CNY pricing
+
 Environment variables:
     LLM_PROVIDER       (default: deepseek)
     DEEPSEEK_API_KEY
     QWEN_API_KEY
     OPENAI_API_KEY
+
+Cost Tracking:
+    The module automatically tracks token usage and costs through the global
+    CostTracker instance. Use `get_cost_tracker()` to access the tracker and
+    call `report()` to generate cost reports.
 """
 
 from __future__ import annotations
@@ -33,18 +45,24 @@ _MODEL_CONFIGS: dict[str, dict] = {
         "model": "deepseek-chat",
         "input_price": 0.27,  # per 1M tokens, USD
         "output_price": 1.10,
+        "input_price_cny": 1.0,   # 元/百万 tokens
+        "output_price_cny": 2.0,
     },
     "qwen": {
         "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
         "model": "qwen-plus",
         "input_price": 0.80,
         "output_price": 2.00,
+        "input_price_cny": 4.0,
+        "output_price_cny": 12.0,
     },
     "openai": {
         "base_url": "https://api.openai.com/v1",
         "model": "gpt-4o-mini",
         "input_price": 0.15,
         "output_price": 0.60,
+        "input_price_cny": 150.0,
+        "output_price_cny": 600.0,
     },
 }
 
@@ -206,6 +224,12 @@ class OpenAICompatibleProvider(LLMProvider):
             total_tokens=usage_data.get("total_tokens", 0),
         )
 
+        # 自动记录成本
+        try:
+            _tracker.record(usage, self.provider_name)
+        except Exception as e:
+            logger.warning("Failed to record cost for provider %s: %s", self.provider_name, e)
+
         return LLMResponse(
             content=content,
             usage=usage,
@@ -234,6 +258,159 @@ class OpenAICompatibleProvider(LLMProvider):
         input_cost = (usage.prompt_tokens / 1_000_000) * self._input_price
         output_cost = (usage.completion_tokens / 1_000_000) * self._output_price
         return round(input_cost + output_cost, 6)
+
+
+# ---------------------------------------------------------------------------
+# Cost Tracker
+# ---------------------------------------------------------------------------
+
+
+class CostTracker:
+    """追踪 LLM 调用的 token 消耗和成本（人民币）。
+
+    记录每次 API 调用的 token 使用情况，并提供成本估算和报告功能。
+
+    Attributes:
+        _usage_stats: 按提供商分类的 token 使用统计
+    """
+
+    def __init__(self) -> None:
+        """初始化 CostTracker，重置所有统计信息。"""
+        self._usage_stats: dict[str, dict[str, int]] = {}
+        self._reset_stats()
+
+    def _reset_stats(self) -> None:
+        """重置所有提供商的统计信息。"""
+        for provider in _MODEL_CONFIGS:
+            self._usage_stats[provider] = {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "total_tokens": 0,
+                "call_count": 0
+            }
+
+    def record(self, usage: Usage, provider: str) -> None:
+        """记录一次 API 调用的 token 使用情况。
+
+        Args:
+            usage: Token 使用统计
+            provider: 提供商名称 ("deepseek", "qwen", "openai")
+        """
+        if provider not in self._usage_stats:
+            self._usage_stats[provider] = {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "total_tokens": 0,
+                "call_count": 0
+            }
+
+        stats = self._usage_stats[provider]
+        stats["prompt_tokens"] += usage.prompt_tokens
+        stats["completion_tokens"] += usage.completion_tokens
+        stats["total_tokens"] += usage.total_tokens
+        stats["call_count"] += 1
+
+    def estimated_cost(self, provider: str | None = None) -> float:
+        """返回指定提供商或所有提供商的估算成本（人民币）。
+
+        Args:
+            provider: 提供商名称。如果为 None，返回所有提供商的总成本。
+
+        Returns:
+            估算成本（元），四舍五入到 4 位小数。
+        """
+        if provider is not None:
+            if provider not in self._usage_stats:
+                return 0.0
+            return self._calculate_provider_cost(provider)
+
+        # 计算所有提供商的总成本
+        total_cost = 0.0
+        for provider_name in self._usage_stats:
+            total_cost += self._calculate_provider_cost(provider_name)
+        return round(total_cost, 4)
+
+    def _calculate_provider_cost(self, provider: str) -> float:
+        """计算指定提供商的成本。"""
+        if provider not in _MODEL_CONFIGS:
+            return 0.0
+
+        stats = self._usage_stats[provider]
+        config = _MODEL_CONFIGS[provider]
+
+        # 使用人民币价格计算
+        input_cost = (stats["prompt_tokens"] / 1_000_000) * config.get("input_price_cny", 0)
+        output_cost = (stats["completion_tokens"] / 1_000_000) * config.get("output_price_cny", 0)
+
+        return round(input_cost + output_cost, 4)
+
+    def report(self, provider: str | None = None) -> str:
+        """生成成本报告。
+
+        Args:
+            provider: 提供商名称。如果为 None，生成所有提供商的报告。
+
+        Returns:
+            格式化的成本报告字符串。
+        """
+        if provider is not None:
+            return self._generate_provider_report(provider)
+
+        # 生成所有提供商的报告
+        reports = []
+        for provider_name in sorted(self._usage_stats.keys()):
+            if self._usage_stats[provider_name]["call_count"] > 0:
+                reports.append(self._generate_provider_report(provider_name))
+
+        if not reports:
+            return "没有 API 调用记录。"
+
+        # 添加总计
+        total_calls = sum(stats["call_count"] for stats in self._usage_stats.values())
+        total_prompt = sum(stats["prompt_tokens"] for stats in self._usage_stats.values())
+        total_completion = sum(stats["completion_tokens"] for stats in self._usage_stats.values())
+        total_tokens = sum(stats["total_tokens"] for stats in self._usage_stats.values())
+        total_cost = self.estimated_cost()
+
+        reports.append("=" * 60)
+        reports.append("总计:")
+        reports.append(f"  调用次数: {total_calls}")
+        reports.append(f"  Prompt tokens: {total_prompt:,}")
+        reports.append(f"  Completion tokens: {total_completion:,}")
+        reports.append(f"  总 tokens: {total_tokens:,}")
+        reports.append(f"  估算成本: ¥{total_cost:.4f}")
+
+        return "\n".join(reports)
+
+    def _generate_provider_report(self, provider: str) -> str:
+        """生成单个提供商的报告。"""
+        if provider not in self._usage_stats:
+            return f"提供商 '{provider}' 没有调用记录。"
+
+        stats = self._usage_stats[provider]
+        if stats["call_count"] == 0:
+            return f"提供商 '{provider}' 没有调用记录。"
+
+        cost = self._calculate_provider_cost(provider)
+
+        lines = [
+            f"{provider.upper()} 成本报告:",
+            f"  调用次数: {stats['call_count']}",
+            f"  Prompt tokens: {stats['prompt_tokens']:,}",
+            f"  Completion tokens: {stats['completion_tokens']:,}",
+            f"  总 tokens: {stats['total_tokens']:,}",
+            f"  估算成本: ¥{cost:.4f}"
+        ]
+
+        return "\n".join(lines)
+
+    def reset(self) -> None:
+        """重置所有统计信息。"""
+        self._reset_stats()
+
+
+# 全局 CostTracker 实例
+_tracker = CostTracker()
 
 
 # ---------------------------------------------------------------------------
@@ -339,6 +516,15 @@ def quick_chat(
     return resp.content
 
 
+def get_cost_tracker() -> CostTracker:
+    """获取全局 CostTracker 实例。
+
+    Returns:
+        全局 CostTracker 实例，用于访问成本统计和报告。
+    """
+    return _tracker
+
+
 # ---------------------------------------------------------------------------
 # Self-test
 # ---------------------------------------------------------------------------
@@ -392,6 +578,40 @@ def _run_self_test() -> None:
     cost = provider.calculate_cost(usage)
     logger.info("Estimated cost for usage %s: $%.6f", usage, cost)
     assert cost >= 0, "Cost should be non-negative"
+
+    # --- CostTracker test ---
+    tracker = get_cost_tracker()
+
+    # 重置 tracker 以确保干净的测试环境
+    tracker.reset()
+
+    # 测试记录功能
+    test_usage = Usage(prompt_tokens=500, completion_tokens=200, total_tokens=700)
+    tracker.record(test_usage, "deepseek")
+    tracker.record(test_usage, "qwen")
+
+    # 测试成本估算
+    deepseek_cost = tracker.estimated_cost("deepseek")
+    qwen_cost = tracker.estimated_cost("qwen")
+    total_cost = tracker.estimated_cost()
+
+    logger.info("CostTracker test:")
+    logger.info("  DeepSeek estimated cost: ¥%.4f", deepseek_cost)
+    logger.info("  Qwen estimated cost: ¥%.4f", qwen_cost)
+    logger.info("  Total estimated cost: ¥%.4f", total_cost)
+
+    # 验证成本计算（基于价格表：deepseek 输入1元/百万，输出2元/百万）
+    expected_deepseek = (500/1_000_000)*1.0 + (200/1_000_000)*2.0
+    assert abs(deepseek_cost - expected_deepseek) < 0.0001, (
+        f"DeepSeek cost mismatch: {deepseek_cost} vs {expected_deepseek}"
+    )
+
+    # 测试报告功能
+    report = tracker.report()
+    logger.info("CostTracker report:\n%s", report)
+    assert "DEEPSEEK" in report, "Report should contain DEEPSEEK section"
+    assert "QWEN" in report, "Report should contain QWEN section"
+    assert "总计" in report, "Report should contain total section"
 
     logger.info("All self-tests passed.")
 

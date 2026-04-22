@@ -300,6 +300,11 @@ def main() -> int:
     """Entry point. Returns 0 on success, 1 on failure."""
     if len(sys.argv) < 2:
         print("Usage: python hooks/validate_json.py <json_file> [json_file2 ...]", file=sys.stderr)
+        print("\nExamples:", file=sys.stderr)
+        print("  python hooks/validate_json.py knowledge/articles/processed/*.json", file=sys.stderr)
+        print("  python hooks/validate_json.py path/to/article.json", file=sys.stderr)
+        print("\nNote: This script validates knowledge entry JSON files against the schema", file=sys.stderr)
+        print("      defined in AGENTS.md section 5.", file=sys.stderr)
         return 1
 
     files = _expand_paths(sys.argv[1:])

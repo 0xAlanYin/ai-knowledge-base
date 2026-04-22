@@ -87,7 +87,12 @@ jobs:
         run: |
           if [ -f "hooks/validate_json.py" ]; then
             echo "Running JSON validation..."
-            python hooks/validate_json.py
+            # 只验证已处理的知识条目，这些应该符合 AGENTS.md 中定义的格式
+            if [ -d "knowledge/articles/processed" ]; then
+              python hooks/validate_json.py knowledge/articles/processed/*.json
+            else
+              echo "No processed articles directory found, skipping validation"
+            fi
           else
             echo "validate_json.py not found, skipping validation"
           fi
